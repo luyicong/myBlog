@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\WWW\myblog\public/../application/admin\view\category\store.html";i:1495302802;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495342466;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1496159368;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -119,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -168,51 +168,84 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-    <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
-        <li>
-            <a href=""><i class="fa fa-cogs"></i>
-                栏目管理</a>
-        </li>
-        <li class="active">
-            <a href="">栏目添加</a>
-        </li>
-
-    </ol>
-    <ul class="nav nav-tabs" role="tablist">
-        <li><a href="<?php echo url('admin/Category/index'); ?>">栏目列表</a></li>
-        <li class="active"><a href="<?php echo url('admin/Category/store'); ?>">添加栏目</a></li>
-    </ul>
-    <form class="form-horizontal" id="form" action="" method="post">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">栏目管理</h3>
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            文章管理</a>
+    </li>
+    <li class="active">
+        <a href="">文章添加</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li><a href="">文章管理</a></li>
+    <li class="active"><a href="">文章添加</a></li>
+</ul>
+<form class="form-horizontal" id="form"  action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">文章管理</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章标题</label>
+                <div class="col-sm-9">
+                    <input type="text" name="title"  class="form-control" placeholder="文章标题">
+                </div>
             </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目名称</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="cate_name"  class="form-control" placeholder="">
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章作者</label>
+                <div class="col-sm-9">
+                    <input type="text" name="author"  class="form-control" placeholder="文章作者">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">所属分类</label>
+                <div class="col-sm-9">
+                    <select class="js-example-basic-single form-control" name="category_cid">
+                        <option value="0">请选择分类</option>
+                        <?php if(is_array($cateData) || $cateData instanceof \think\Collection || $cateData instanceof \think\Paginator): if( count($cateData)==0 ) : echo "" ;else: foreach($cateData as $key=>$vo): ?>
+                        <option value="<?php echo $vo['cate_id']; ?>"><?php echo $vo['_cate_name']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">标签</label>
+                <div class="col-sm-9">
+                    <?php if(is_array($tagList) || $tagList instanceof \think\Collection || $tagList instanceof \think\Paginator): if( count($tagList)==0 ) : echo "" ;else: foreach($tagList as $key=>$vo): ?>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="" value="<?php echo $vo['tag_id']; ?>"><?php echo $vo['tag_name']; ?>
+                    </label>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">缩略图</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <input type="file" class="btn btn-default" name="">
+                        </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">所属栏目</label>
-                    <div class="col-sm-9">
-                        <select class="js-example-basic-single form-control" name="cate_pid">
-                            <option value="0">顶级栏目</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章摘要</label>
+                <div class="col-sm-9">
+                    <textarea type="text" name="digest"  class="form-control" placeholder="文章摘要"></textarea>
                 </div>
-
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目排序</label>
-                    <div class="col-sm-9">
-                        <input type="number" name="cate_sort"  class="form-control" placeholder="">
-                    </div>
+            </div>
+            <div class="form-group">
+                <label for=""  class="col-sm-2 control-label">文章内容</label>
+                <div class="col-sm-9">
+                    <textarea type="text" name="content"  class="form-control" placeholder="文章摘要"></textarea>
                 </div>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">确定</button>
-    </form>
+    </div>
+    <button class="btn btn-primary" type="submit">确定</button>
+</form>
 
         </div>
     </div>

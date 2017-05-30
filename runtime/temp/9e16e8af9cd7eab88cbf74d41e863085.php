@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\WWW\myblog\public/../application/admin\view\category\index.html";i:1495343750;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495342466;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\WWW\myBlog\public/../application/admin\view\entry\index.html";i:1495338334;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -119,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -168,68 +168,38 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
-    <li>
-        <a href=""><i class="fa fa-cogs"></i>
-            栏目管理</a>
-    </li>
-    <li class="active">
-        <a href="">栏目列表</a>
-    </li>
-</ol>
-<ul class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="">栏目列表</a></li>
-    <li><a href="<?php echo url('admin/Category/store'); ?>">添加栏目</a></li>
-</ul>
-<form action="" method="post">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th width="80">编号</th>
-                    <th>栏目名称</th>
-                    <th width="200">操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach($cateList as $vo): ?>
-                <tr>
-                    <td><?php echo $vo['cate_id']; ?></td>
-                    <td><?php echo $vo['_cate_name']; ?></td>
-                    <td>
-                        <div class="btn-group">
-                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="<?php echo url('addSon',['cate_id'=>$vo['cate_id']]); ?>">添加子类</a></li>
-                                <li><a href="<?php echo url('edit',['cate_id'=>$vo['cate_id']]); ?>">编辑</a></li>
-                                <li class="divider"></li>
-                                <li><a href="javascript:;" onclick="del(<?php echo $vo['cate_id']; ?>)">删除</a></li>
-                            </ul>
-                        </div>
-                    </td>
-                </tr>
-                <?php endforeach; ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</form>
-<div class="pagination pagination-sm pull-right">
-</div>
-<script>
-    function del(cate_id) {
-        //询问框
-        layer.confirm('确定删除当前栏目吗？', {
-            btn: ['确定','取消'] //按钮
-        }, function(){
-            window.location.href = '<?php echo url('del'); ?>?cate_id='+cate_id;
-        }, function(){
-
-        });
-//        window.location.href = '<?php echo url('del'); ?>?cate_id='+cate_id;
-    }
-</script>
+    <table class="table table-hover">
+        <tbody>
+        <tr>
+            <th class="active" colspan="10">温馨提示</th>
+        </tr>
+        <tr>
+            <td colspan="10">
+                LYC个人博客：<a href="http://www.congitlive.cn" target="_blank">www.congitlive.cn</a>
+                github地址：<a href="https://github.com/luyicong" target="_blank">https://github.com/luyicong</a>
+            </td>
+        </tr>
+        <tr>
+            <th class="active" colspan="10">系统信息</th>
+        </tr>
+        <tr>
+            <td>核心框架</td>
+            <td colspan="5">ThinkPHP5.05完整版</td>
+        </tr>
+        <tr>
+            <td>版本号</td>
+            <td colspan="5">1.0</td>
+        </tr>
+        <tr>
+            <td>开发者</td>
+            <td colspan="5">LYC</td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td colspan="5">980469887@qq.com</td>
+        </tr>
+        </tbody>
+    </table>
 
         </div>
     </div>

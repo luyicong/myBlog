@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"D:\WWW\myBlog\public/../application/admin\view\tag\store.html";i:1496089383;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,9 +59,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{:url('admin/Entry/updatepwd')}">修改密码</a></li>
+                            <li><a href="<?php echo url('admin/Entry/updatepwd'); ?>">修改密码</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="{:url('admin/Entry/logout')}">退出</a></li>
+                            <li><a href="<?php echo url('admin/Entry/logout'); ?>">退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -84,7 +85,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
-                    <a href="{:url('admin/Category/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
                         <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
@@ -101,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="{:url('admin/Tag/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -118,7 +119,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="{:url('admin/Article/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         文章列表
@@ -166,7 +167,38 @@
         </div>
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
-            {block name="content"}{/block}
+            
+    <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+        <li>
+            <a href=""><i class="fa fa-cogs"></i>
+                标签管理</a>
+        </li>
+        <li class="active">
+            <a href="">标签添加</a>
+        </li>
+    </ol>
+    <ul class="nav nav-tabs" role="tablist">
+        <li><a href="<?php echo url('admin/Tag/index'); ?>">标签管理</a></li>
+        <li class="active"><a href="">标签添加</a></li>
+    </ul>
+    <form class="form-horizontal" id="form"  action="" method="post">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">标签管理</h3>
+            </div>
+            <div class="panel-body">
+
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">标签名称</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" name="tag_name" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">确定</button>
+    </form>
+
         </div>
     </div>
     <!--右侧主体区域部分结束 end-->

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\WWW\myblog\public/../application/admin\view\entry\updatepwd.html";i:1495292528;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495296550;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\WWW\myBlog\public/../application/admin\view\category\index.html";i:1495343750;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +10,7 @@
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="__STATIC__/admin/js/jquery.min.js"></script>
     <script src="__STATIC__/admin/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
-    <script src="resource/hdjs/app/util.js"></script>
-    <script src="resource/hdjs/require.js"></script>
-    <script src="resource/hdjs/app/config.js"></script>
+    <script src="__STATIC__/layer/layer.js"></script>
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -36,7 +34,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <h4 style="display: inline;line-height: 50px;float: left;margin: 0px"><a href="index.html" style="color: white;margin-left: -14px">LYC个人博客网</a>
+                <h4 style="display: inline;line-height: 50px;float: left;margin: 0px"><a href="index.html" style="color: white;margin-left: -14px">LYC个人博客后台管理系统</a>
                 </h4>
                 <div class="navbar-header">
                     <ul class="nav navbar-nav">
@@ -48,9 +46,9 @@
                             <a href="http://fontawesome.dashgame.com/" target="_blank"><i
                                     class="fa fa-w fa-hand-o-right"></i> 图标库</a>
                         </li>
-                        <li>
-                            <a href="http://bbs.houdunwang.com" target="_blank"><i class="fa fa-w fa-forumbee"></i> 后盾网论坛</a>
-                        </li>
+                        <!--<li>-->
+                            <!--<a href="http://bbs.houdunwang.com" target="_blank"><i class="fa fa-w fa-forumbee"></i> 后盾网论坛</a>-->
+                        <!--</li>-->
                     </ul>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
@@ -63,7 +61,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="<?php echo url('admin/Entry/updatepwd'); ?>">修改密码</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="">退出</a></li>
+                            <li><a href="<?php echo url('admin/Entry/logout'); ?>">退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -88,7 +86,7 @@
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
                     <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
-                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
                     </a>
@@ -104,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -121,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
-                        <i class="fa fa-wrench" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
+                        <i class="fa fa-list" aria-hidden="true"></i>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
-                        <i class="fa fa-wrench" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -143,7 +141,7 @@
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample4">
                     <a href="" class="list-group-item">
-                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                        <i class="fa fa-rss" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         友链首页
                     </a>
@@ -170,43 +168,68 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-    <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
-        <li>
-            <a href="javascript:;"><i class="fa fa-cogs"></i>
-                密码管理</a>
-        </li>
-        <li class="active">
-            <a href="javascript:;">修改密码</a>
-        </li>
-    </ol>
-    <form onsubmit="return changePass()" class="form-horizontal" id="form" action="" method="post">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">修改密码</h3>
-            </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">原始密码</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="admin_password"  class="form-control" placeholder="请填写原始密码">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">新密码</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="new_password"  class="form-control" placeholder="请填写新密码">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">确认密码</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="confirm_password"  class="form-control" placeholder="请填写确认密码">
-                    </div>
-                </div>
-            </div>
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            栏目管理</a>
+    </li>
+    <li class="active">
+        <a href="">栏目列表</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="">栏目列表</a></li>
+    <li><a href="<?php echo url('admin/Category/store'); ?>">添加栏目</a></li>
+</ul>
+<form action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th width="80">编号</th>
+                    <th>栏目名称</th>
+                    <th width="200">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach($cateList as $vo): ?>
+                <tr>
+                    <td><?php echo $vo['cate_id']; ?></td>
+                    <td><?php echo $vo['_cate_name']; ?></td>
+                    <td>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="<?php echo url('addSon',['cate_id'=>$vo['cate_id']]); ?>">添加子类</a></li>
+                                <li><a href="<?php echo url('edit',['cate_id'=>$vo['cate_id']]); ?>">编辑</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:;" onclick="del(<?php echo $vo['cate_id']; ?>)">删除</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
         </div>
-        <button class="btn btn-primary" type="submit">确定</button>
-    </form>
+    </div>
+</form>
+<div class="pagination pagination-sm pull-right">
+</div>
+<script>
+    function del(cate_id) {
+        //询问框
+        layer.confirm('确定删除当前栏目吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            window.location.href = '<?php echo url('del'); ?>?cate_id='+cate_id;
+        }, function(){
+
+        });
+//        window.location.href = '<?php echo url('del'); ?>?cate_id='+cate_id;
+    }
+</script>
 
         </div>
     </div>
@@ -214,11 +237,11 @@
 </div>
 </div>
 <div class="master-footer" style="margin-top: 150px">
-    <a href="http://www.houdunwang.com">高端培训</a>
-    <a href="http://www.hdphp.com">开源框架</a>
-    <a href="http://bbs.houdunwang.com">后盾论坛</a>
+    <!--<a href="http://www.houdunwang.com">高端培训</a>-->
+    <!--<a href="http://www.hdphp.com">开源框架</a>-->
+    <!--<a href="http://bbs.houdunwang.com">后盾论坛</a>-->
     <br>
-    Powered by hdphp v2.0 © 2016-2022 www.hdphp.com
+    Powered by LYC © 2017-2022 www.congitlive.cn
 </div>
 </body>
 </html>

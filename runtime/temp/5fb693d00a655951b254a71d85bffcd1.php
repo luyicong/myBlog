@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myblog\public/../application/admin\view\category\edit.html";i:1495340171;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495342466;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"D:\WWW\myBlog\public/../application/admin\view\tag\edit.html";i:1496093460;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -119,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -168,54 +168,36 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-    <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
-        <li>
-            <a href=""><i class="fa fa-cogs"></i>
-                栏目管理</a>
-        </li>
-        <li class="active">
-            <a href="">栏目编辑</a>
-        </li>
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            标签管理</a>
+    </li>
+    <li class="active">
+        <a href="">标签编辑</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li><a href="<?php echo url('admin/Tag/index'); ?>">标签管理</a></li>
+    <li class="active"><a href="">标签编辑</a></li>
+</ul>
+<form class="form-horizontal" id="form"  action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">标签管理</h3>
+        </div>
+        <div class="panel-body">
 
-    </ol>
-    <ul class="nav nav-tabs" role="tablist">
-        <li><a href="<?php echo url('admin/Category/index'); ?>">栏目列表</a></li>
-        <li class="active"><a href="<?php echo url('admin/Category/store'); ?>">编辑栏目</a></li>
-    </ul>
-    <form class="form-horizontal" id="form" action="" method="post">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">栏目管理</h3>
-            </div>
-            <div class="panel-body">
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目名称</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="cate_name"  class="form-control" placeholder="" value="<?php echo $oldData['cate_name']; ?>">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">所属栏目</label>
-                    <div class="col-sm-9">
-                        <select class="js-example-basic-single form-control" name="cate_pid">
-                            <option value="0">顶级栏目</option>
-                            <?php foreach($cateData as $vo): ?>
-                            <option <?php if($oldData['cate_pid']==$vo['cate_id']): ?> selected <?php endif; ?> value="<?php echo $vo['cate_id']; ?>"><?php echo $vo['_cate_name']; ?></option>
-                            <?php endforeach; ?>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目排序</label>
-                    <div class="col-sm-9">
-                        <input type="number" name="cate_sort"  class="form-control" placeholder="" value="<?php echo $oldData['cate_sort']; ?>">
-                    </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">标签名称</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="tag_name" value="<?php echo $oldData['tag_name']; ?>">
                 </div>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">确定</button>
-    </form>
+    </div>
+    <button class="btn btn-primary" type="submit">确定</button>
+</form>
 
         </div>
     </div>

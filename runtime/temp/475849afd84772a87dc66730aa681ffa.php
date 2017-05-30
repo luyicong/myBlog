@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\WWW\myblog\public/../application/admin\view\entry\index.html";i:1495338334;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495338300;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1496158351;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +10,7 @@
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="__STATIC__/admin/js/jquery.min.js"></script>
     <script src="__STATIC__/admin/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
-    <script src="resource/hdjs/app/util.js"></script>
-    <script src="resource/hdjs/require.js"></script>
-    <script src="resource/hdjs/app/config.js"></script>
+    <script src="__STATIC__/layer/layer.js"></script>
     <!--[if lt IE 9]>
     <script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -88,7 +86,7 @@
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
                     <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
-                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
                     </a>
@@ -104,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -121,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -170,38 +168,63 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-    <table class="table table-hover">
-        <tbody>
-        <tr>
-            <th class="active" colspan="10">温馨提示</th>
-        </tr>
-        <tr>
-            <td colspan="10">
-                LYC个人博客：<a href="http://www.congitlive.cn" target="_blank">www.congitlive.cn</a>
-                github地址：<a href="https://github.com/luyicong" target="_blank">https://github.com/luyicong</a>
-            </td>
-        </tr>
-        <tr>
-            <th class="active" colspan="10">系统信息</th>
-        </tr>
-        <tr>
-            <td>核心框架</td>
-            <td colspan="5">ThinkPHP5.05完整版</td>
-        </tr>
-        <tr>
-            <td>版本号</td>
-            <td colspan="5">1.0</td>
-        </tr>
-        <tr>
-            <td>开发者</td>
-            <td colspan="5">LYC</td>
-        </tr>
-        <tr>
-            <td>邮箱</td>
-            <td colspan="5">980469887@qq.com</td>
-        </tr>
-        </tbody>
-    </table>
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            文章管理</a>
+    </li>
+    <li class="active">
+        <a href="">文章添加</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#tab1">文章管理</a></li>
+    <li><a href="<?php echo url('admin/Article/store'); ?>">文章添加</a></li>
+</ul>
+<form action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th width="5%">编号</th>
+                    <th>文章标题</th>
+                    <th>作者</th>
+                    <th width="5%">排序</th>
+                    <th>所属分类</th>
+                    <th>添加时间</th>
+                    <th width="200">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($arcList) || $arcList instanceof \think\Collection || $arcList instanceof \think\Paginator): if( count($arcList)==0 ) : echo "" ;else: foreach($arcList as $key=>$vo): ?>
+                <tr>
+                    <td><?php echo $vo['arc_id']; ?></td>
+                    <td><?php echo $vo['arc_title']; ?></td>
+                    <td><?php echo $vo['arc_author']; ?></td>
+                    <td>
+                        <input style="width:50px" type="text" class="form-control" value="<?php echo $vo['arc_sort']; ?>">
+                    </td>
+                    <td><?php echo $vo['cate_name']; ?></td>
+                    <td><?php echo date('Y-m-d',$vo['sendtime']); ?></td>
+                    <td>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">编辑</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">删除到回收站</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
+<div class="pagination pagination-sm pull-right"></div>
 
         </div>
     </div>

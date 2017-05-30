@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\WWW\myblog\public/../application/admin\view\category\addson.html";i:1495306609;s:56:"D:\WWW\myblog\public/../application/admin\view\base.html";i:1495342466;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:61:"D:\WWW\myBlog\public/../application/admin\view\tag\index.html";i:1496158010;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -119,14 +119,14 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         文章列表
                     </a>
                     <a href="" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        <span class="pull-right" href=""></span>
+                        <span class="pull-right"></span>
                         回收站
                     </a>
                 </ul>
@@ -171,48 +171,62 @@
     <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
         <li>
             <a href=""><i class="fa fa-cogs"></i>
-                栏目管理</a>
+                标签管理</a>
         </li>
         <li class="active">
-            <a href="">栏目添加</a>
+            <a href="">标签展示</a>
         </li>
-
     </ol>
     <ul class="nav nav-tabs" role="tablist">
-        <li><a href="<?php echo url('admin/Category/index'); ?>">栏目列表</a></li>
-        <li class="active"><a href="<?php echo url('admin/Category/store'); ?>">添加子栏目</a></li>
+        <li class="active"><a href="">标签管理</a></li>
+        <li><a href="<?php echo url('admin/Tag/store'); ?>">添加标签</a></li>
     </ul>
-    <form class="form-horizontal" id="form" action="" method="post">
+    <form action="" method="post">
         <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">栏目管理</h3>
-            </div>
             <div class="panel-body">
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目名称</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="cate_name"  class="form-control" placeholder="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">所属栏目</label>
-                    <div class="col-sm-9">
-                        <select class="js-example-basic-single form-control" name="cate_pid">
-                            <option value="<?php echo $data['cate_id']; ?>"><?php echo $data['cate_name']; ?></option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="" class="col-sm-2 control-label">栏目排序</label>
-                    <div class="col-sm-9">
-                        <input type="number" name="cate_sort"  class="form-control" placeholder="">
-                    </div>
-                </div>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th width="80">编号</th>
+                        <th>标签名</th>
+                        <th width="200">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php if(is_array($tagList) || $tagList instanceof \think\Collection || $tagList instanceof \think\Paginator): if( count($tagList)==0 ) : echo "" ;else: foreach($tagList as $key=>$vo): ?>
+                    <tr>
+                        <td><?php echo $vo['tag_id']; ?></td>
+                        <td><?php echo $vo['tag_name']; ?></td>
+                        <td>
+                            <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="<?php echo url('edit',['tag_id'=>$vo['tag_id']]); ?>">编辑</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="javascript:;" onclick="del(<?php echo $vo['tag_id']; ?>)">删除</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <button class="btn btn-primary" type="submit">确定</button>
     </form>
+    <div class="pagination pagination-sm pull-right">
+        <?php echo $tagList->render(); ?>
+    </div>
+    <script>
+        function del(id){
+            //询问框
+            layer.confirm('确定删除当前标签吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                window.location.href = '<?php echo url('del'); ?>?tag_id='+id;
+            });
+        }
+    </script>
 
         </div>
     </div>

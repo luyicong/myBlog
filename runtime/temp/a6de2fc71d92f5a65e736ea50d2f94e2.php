@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1496159368;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1497115759;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +22,20 @@
             }
         }
     </script>
+    <script>
+        //模块配置项
+        var hdjs = {
+            //框架目录
+            'base': '__STATIC__/node_modules/hdjs',
+            //上传文件后台地址
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
+            //获取文件列表的后台地址
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
+        };
+    </script>
+    <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/require.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/config.js"></script>
     <style>
         i {
             color: #337ab7;
@@ -178,7 +192,7 @@
     </li>
 </ol>
 <ul class="nav nav-tabs" role="tablist">
-    <li><a href="">文章管理</a></li>
+    <li><a href="<?php echo url('admin/Article/index'); ?>">文章管理</a></li>
     <li class="active"><a href="">文章添加</a></li>
 </ul>
 <form class="form-horizontal" id="form"  action="" method="post">
@@ -224,11 +238,38 @@
                 <label for="" class="col-sm-2 control-label">缩略图</label>
                 <div class="col-sm-9">
                     <div class="input-group">
+                        <input type="text" class="form-control" name="thumb" readonly="" value="">
                         <div class="input-group-btn">
-                            <input type="file" class="btn btn-default" name="">
+                            <button onclick="upImage(this)" class="btn btn-default" type="button">选择图片</button>
                         </div>
                     </div>
+                    <div class="input-group" style="margin-top:5px;">
+                        <img src="__STATIC__/images/nopic.jpg" class="img-responsive img-thumbnail" width="150">
+                        <em class="close" style="position:absolute; top: 0px; right: -14px;" title="删除这张图片" onclick="removeImg(this)">×</em>
+                    </div>
                 </div>
+                <script>
+                    //上传图片
+                    function upImage(obj) {
+                        require(['util'], function (util) {
+                            options = {
+                                multiple: false,//是否允许多图上传
+                                //data是向后台服务器提交的POST数据
+                                data:{name:'博客',year:2099},
+                            };
+                            util.image(function (images) {          //上传成功的图片，数组类型
+
+                                $("[name='thumb']").val(images[0]);
+                                $(".img-thumbnail").attr('src', images[0]);
+                            }, options)
+                        });
+                    }
+                    //移除图片
+                    function removeImg(obj) {
+                        $(obj).prev('img').attr('src', 'resource/images/nopic.jpg');
+                        $(obj).parent().prev().find('input').val('');
+                    }
+                </script>
             </div>
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">文章摘要</label>
@@ -239,7 +280,13 @@
             <div class="form-group">
                 <label for=""  class="col-sm-2 control-label">文章内容</label>
                 <div class="col-sm-9">
-                    <textarea type="text" name="content"  class="form-control" placeholder="文章摘要"></textarea>
+                    <textarea id="container" style="height:300px;width:100%;"></textarea>
+                    <script>
+                        util.ueditor('container', {hash:2,data:'hd'}, function (editor) {
+                            //这是回调函数 editor是百度编辑器实例
+                        });
+                    </script>
+                    <!--第二个参数为添加到数据表中字段，hash为确定上传文件标识（可以以用户编号，标识为此用户上传的文件，系统使用这个字段值来显示文件列表），data为数据表中的data字段值，开发者根据业务需要自行添加-->
                 </div>
             </div>
         </div>

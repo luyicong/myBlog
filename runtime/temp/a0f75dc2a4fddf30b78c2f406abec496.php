@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\category\edit.html";i:1495340171;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,20 +22,6 @@
             }
         }
     </script>
-    <script>
-        //模块配置项
-        var hdjs = {
-            //框架目录
-            'base': '__STATIC__/node_modules/hdjs',
-            //上传文件后台地址
-            'uploader': "{:url('system/component/uploader')}",
-            //获取文件列表的后台地址
-            'filesLists':"{:url('system/component/filesLists')}?",
-        };
-    </script>
-    <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
-    <script src="__STATIC__/node_modules/hdjs/require.js"></script>
-    <script src="__STATIC__/node_modules/hdjs/config.js"></script>
     <style>
         i {
             color: #337ab7;
@@ -72,9 +59,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{:url('admin/Entry/updatepwd')}">修改密码</a></li>
+                            <li><a href="<?php echo url('admin/Entry/updatepwd'); ?>">修改密码</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="{:url('admin/Entry/logout')}">退出</a></li>
+                            <li><a href="<?php echo url('admin/Entry/logout'); ?>">退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -98,7 +85,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
-                    <a href="{:url('admin/Category/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
                         <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
@@ -115,7 +102,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="{:url('admin/Tag/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -132,7 +119,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="{:url('admin/Article/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         文章列表
@@ -180,7 +167,56 @@
         </div>
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
-            {block name="content"}{/block}
+            
+    <ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+        <li>
+            <a href=""><i class="fa fa-cogs"></i>
+                栏目管理</a>
+        </li>
+        <li class="active">
+            <a href="">栏目编辑</a>
+        </li>
+
+    </ol>
+    <ul class="nav nav-tabs" role="tablist">
+        <li><a href="<?php echo url('admin/Category/index'); ?>">栏目列表</a></li>
+        <li class="active"><a href="<?php echo url('admin/Category/store'); ?>">编辑栏目</a></li>
+    </ul>
+    <form class="form-horizontal" id="form" action="" method="post">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">栏目管理</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">栏目名称</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="cate_name"  class="form-control" placeholder="" value="<?php echo $oldData['cate_name']; ?>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">所属栏目</label>
+                    <div class="col-sm-9">
+                        <select class="js-example-basic-single form-control" name="cate_pid">
+                            <option value="0">顶级栏目</option>
+                            <?php foreach($cateData as $vo): ?>
+                            <option <?php if($oldData['cate_pid']==$vo['cate_id']): ?> selected <?php endif; ?> value="<?php echo $vo['cate_id']; ?>"><?php echo $vo['_cate_name']; ?></option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="col-sm-2 control-label">栏目排序</label>
+                    <div class="col-sm-9">
+                        <input type="number" name="cate_sort"  class="form-control" placeholder="" value="<?php echo $oldData['cate_sort']; ?>">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">确定</button>
+    </form>
+
         </div>
     </div>
     <!--右侧主体区域部分结束 end-->

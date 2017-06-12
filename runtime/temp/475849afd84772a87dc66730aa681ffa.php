@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1496158351;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1497286869;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +22,20 @@
             }
         }
     </script>
+    <script>
+        //模块配置项
+        var hdjs = {
+            //框架目录
+            'base': '__STATIC__/node_modules/hdjs',
+            //上传文件后台地址
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
+            //获取文件列表的后台地址
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
+        };
+    </script>
+    <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/require.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/config.js"></script>
     <style>
         i {
             color: #337ab7;
@@ -203,7 +217,7 @@
                     <td><?php echo $vo['arc_title']; ?></td>
                     <td><?php echo $vo['arc_author']; ?></td>
                     <td>
-                        <input style="width:50px" type="text" class="form-control" value="<?php echo $vo['arc_sort']; ?>">
+                        <input style="width:50px" type="text" class="form-control" value="<?php echo $vo['arc_sort']; ?>" onblur="upSort(this,<?php echo $vo['arc_id']; ?>)">
                     </td>
                     <td><?php echo $vo['cate_name']; ?></td>
                     <td><?php echo date('Y-m-d',$vo['sendtime']); ?></td>
@@ -224,7 +238,22 @@
         </div>
     </div>
 </form>
-<div class="pagination pagination-sm pull-right"></div>
+<div class="pagination pagination-sm pull-right">
+    <?php echo $arcList->render(); ?>
+</div>
+<script>
+    function upSort(obj,arc_id) {
+        $.post("<?php echo url('upSort'); ?>",{arc_sort:$(obj).val(),arc_id:arc_id},function (res) {
+            if(res.code){
+                //修改成功
+                util.message(res.msg,'refresh','success');
+            }else{
+                //修改失败
+                util.message(res.msg,'back','error');
+            }
+        },'json');
+    }
+</script>
 
         </div>
     </div>

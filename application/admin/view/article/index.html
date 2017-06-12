@@ -35,7 +35,7 @@
                     <td>{$vo.arc_title}</td>
                     <td>{$vo.arc_author}</td>
                     <td>
-                        <input style="width:50px" type="text" class="form-control" value="{$vo.arc_sort}">
+                        <input style="width:50px" type="text" class="form-control" value="{$vo.arc_sort}" onblur="upSort(this,{$vo.arc_id})">
                     </td>
                     <td>{$vo.cate_name}</td>
                     <td>{:date('Y-m-d',$vo.sendtime)}</td>
@@ -56,5 +56,20 @@
         </div>
     </div>
 </form>
-<div class="pagination pagination-sm pull-right"></div>
+<div class="pagination pagination-sm pull-right">
+    {$arcList->render()}
+</div>
+<script>
+    function upSort(obj,arc_id) {
+        $.post("{:url('upSort')}",{arc_sort:$(obj).val(),arc_id:arc_id},function (res) {
+            if(res.code){
+                //修改成功
+                util.message(res.msg,'refresh','success');
+            }else{
+                //修改失败
+                util.message(res.msg,'back','error');
+            }
+        },'json');
+    }
+</script>
 {/block}

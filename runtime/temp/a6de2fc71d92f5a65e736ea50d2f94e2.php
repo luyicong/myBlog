@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1497115759;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1497279497;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -204,19 +204,25 @@
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">文章标题</label>
                 <div class="col-sm-9">
-                    <input type="text" name="title"  class="form-control" placeholder="文章标题">
+                    <input type="text" name="arc_title"  class="form-control" placeholder="文章标题">
                 </div>
             </div>
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">文章作者</label>
                 <div class="col-sm-9">
-                    <input type="text" name="author"  class="form-control" placeholder="文章作者">
+                    <input type="text" name="arc_author"  class="form-control" placeholder="文章作者">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章排序</label>
+                <div class="col-sm-9">
+                    <input type="number" name="arc_sort" value="100"  class="form-control">
                 </div>
             </div>
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">所属分类</label>
                 <div class="col-sm-9">
-                    <select class="js-example-basic-single form-control" name="category_cid">
+                    <select class="js-example-basic-single form-control" name="cate_id">
                         <option value="0">请选择分类</option>
                         <?php if(is_array($cateData) || $cateData instanceof \think\Collection || $cateData instanceof \think\Paginator): if( count($cateData)==0 ) : echo "" ;else: foreach($cateData as $key=>$vo): ?>
                         <option value="<?php echo $vo['cate_id']; ?>"><?php echo $vo['_cate_name']; ?></option>
@@ -229,7 +235,7 @@
                 <div class="col-sm-9">
                     <?php if(is_array($tagList) || $tagList instanceof \think\Collection || $tagList instanceof \think\Paginator): if( count($tagList)==0 ) : echo "" ;else: foreach($tagList as $key=>$vo): ?>
                     <label class="checkbox-inline">
-                        <input type="checkbox" name="" value="<?php echo $vo['tag_id']; ?>"><?php echo $vo['tag_name']; ?>
+                        <input type="checkbox" name="tag[]" value="<?php echo $vo['tag_id']; ?>"><?php echo $vo['tag_name']; ?>
                     </label>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
@@ -238,7 +244,7 @@
                 <label for="" class="col-sm-2 control-label">缩略图</label>
                 <div class="col-sm-9">
                     <div class="input-group">
-                        <input type="text" class="form-control" name="thumb" readonly="" value="">
+                        <input type="text" class="form-control" name="arc_thumb" readonly="" value="">
                         <div class="input-group-btn">
                             <button onclick="upImage(this)" class="btn btn-default" type="button">选择图片</button>
                         </div>
@@ -259,7 +265,7 @@
                             };
                             util.image(function (images) {          //上传成功的图片，数组类型
 
-                                $("[name='thumb']").val(images[0]);
+                                $("[name='arc_thumb']").val(images[0]);
                                 $(".img-thumbnail").attr('src', images[0]);
                             }, options)
                         });
@@ -274,13 +280,13 @@
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">文章摘要</label>
                 <div class="col-sm-9">
-                    <textarea type="text" name="digest"  class="form-control" placeholder="文章摘要"></textarea>
+                    <textarea type="text" name="arc_digest"  class="form-control" placeholder="文章摘要"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label for=""  class="col-sm-2 control-label">文章内容</label>
                 <div class="col-sm-9">
-                    <textarea id="container" style="height:300px;width:100%;"></textarea>
+                    <textarea id="container" name="arc_content" style="height:300px;width:100%;"></textarea>
                     <script>
                         util.ueditor('container', {hash:2,data:'hd'}, function (editor) {
                             //这是回调函数 editor是百度编辑器实例

@@ -24,6 +24,18 @@ class Article extends Controller
      * 添加文章
      */
     public function store(){
+        //把psot请求数据交由模型处理
+        if(request()->isPost()){
+            $res = $this->db->store(input('post.'));
+
+            if($res['valid']){
+                //添加成功
+                $this->success($res['msg'],'index');exit;
+            }else{
+                //添加失败
+                $this->error($res['msg']);exit;
+            }
+        }
         //1.获取所有分类数据
         $cateData = (new Category())->getAllCate();
         $this->assign('cateData',$cateData);
@@ -31,5 +43,20 @@ class Article extends Controller
         $tagList = db('tag')->select();
         $this->assign('tagList',$tagList);
         return $this->fetch();
+    }
+    /**
+     * 更新排序
+     */
+    public function upSort(){
+        if(request()->isAjax()){
+            $res = $this->db->upSort(input('post.'));
+            if($res['valid']){
+                //修改成功
+               $this->success($res['msg'],'index');exit;
+            }else{
+                //修改失败
+                $this->error($res['msg']);exit;
+            }
+        }
     }
 }

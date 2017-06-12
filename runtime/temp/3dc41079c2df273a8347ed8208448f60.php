@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\WWW\myBlog\public/../application/admin\view\category\index.html";i:1495343750;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1496095257;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:66:"D:\WWW\myBlog\public/../application/admin\view\category\index.html";i:1495343750;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +22,20 @@
             }
         }
     </script>
+    <script>
+        //模块配置项
+        var hdjs = {
+            //框架目录
+            'base': '__STATIC__/node_modules/hdjs',
+            //上传文件后台地址
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
+            //获取文件列表的后台地址
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
+        };
+    </script>
+    <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/require.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/config.js"></script>
     <style>
         i {
             color: #337ab7;

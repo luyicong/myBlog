@@ -1,0 +1,2204 @@
+[ 2017-06-12T22:31:07+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.myblog.com/ [运行时间：0.027369s][吞吐率：36.54req/s] [内存消耗：1,080.62kb] [文件加载：40]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\WWW\myBlog\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/entry/index
+[ log ] www.myblog.com/admin/entry/index [运行时间：0.150778s][吞吐率：6.63req/s] [内存消耗：1,370.00kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'entry',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:16+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ log ] www.myblog.com/admin/login/index.html [运行时间：0.048479s][吞吐率：20.63req/s] [内存消耗：1,347.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\WWW\myBlog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:16+08:00 ] 127.0.0.1 127.0.0.1 GET /static/admin/admin.ui/js/slimscroll/jquery.slimscroll.min.js
+[ log ] www.myblog.com/static/admin/admin.ui/js/slimscroll/jquery.slimscroll.min.js [运行时间：0.069987s][吞吐率：14.29req/s] [内存消耗：1,103.63kb] [文件加载：42]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'admin',
+    2 => 'admin.ui',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'js' => 'slimscroll',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:17+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html
+[ log ] www.myblog.com/captcha.html [运行时间：0.145953s][吞吐率：6.85req/s] [内存消耗：1,129.48kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\WWW\myBlog\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:33+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/login/index.html
+[ log ] www.myblog.com/admin/login/index.html [运行时间：0.388895s][吞吐率：2.57req/s] [内存消耗：2,181.99kb] [文件加载：63]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '49',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'admin_username' => 'admin',
+  'admin_password' => 'admin',
+  'code' => 'at',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\WWW\myBlog\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086206s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.165306s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `admin_username` = 'admin'  AND `admin_password` = 'gKjd5W7T3zzGPZJBiKMv5Q==' LIMIT 1 [ RunTime:0.033363s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:36+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/login/index.html
+[ log ] www.myblog.com/admin/login/index.html [运行时间：0.043231s][吞吐率：23.13req/s] [内存消耗：1,347.13kb] [文件加载：48]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\WWW\myBlog\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\login\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:43+08:00 ] 127.0.0.1 127.0.0.1 GET /captcha.html?0.5151352117167787
+[ log ] www.myblog.com/captcha.html?0.5151352117167787 [运行时间：0.030130s][吞吐率：33.19req/s] [内存消耗：1,129.63kb] [文件加载：41]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  '0_5151352117167787' => '',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\WWW\myBlog\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:48+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/login/index.html
+[ log ] www.myblog.com/admin/login/index.html [运行时间：0.050606s][吞吐率：19.76req/s] [内存消耗：2,228.84kb] [文件加载：64]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'admin_username' => 'admin',
+  'admin_password' => 'admin888',
+  'code' => 'ea',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\WWW\myBlog\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_admin` [ RunTime:0.004726s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_admin` WHERE  `admin_username` = 'admin'  AND `admin_password` = 'h3vPU8JGuF3VS/uxIpjRSw==' LIMIT 1 [ RunTime:0.000474s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/entry/index.html
+[ log ] www.myblog.com/admin/entry/index.html [运行时间：0.052973s][吞吐率：18.88req/s] [内存消耗：1,491.91kb] [文件加载：51]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'entry',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Entry->index[ D:\WWW\myBlog\application\admin\controller\Entry.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\entry\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:54+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.224760s][吞吐率：4.45req/s] [内存消耗：2,282.24kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/entry/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.077675s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.100862s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.130981s][吞吐率：7.63req/s] [内存消耗：2,250.50kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001079s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.005009s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000462s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.070635s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000576s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:32:17+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.053080s][吞吐率：18.84req/s] [内存消耗：2,250.50kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000859s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.004833s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000437s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000718s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.004592s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000398s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:49:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.076572s][吞吐率：13.06req/s] [内存消耗：2,404.70kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002579s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.010128s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000478s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000880s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.007310s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:49:36+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.352888s][吞吐率：2.83req/s] [内存消耗：2,064.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '115',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => 'a',
+  'arc_author' => 'a',
+  'arc_sort' => '100',
+  'cate_id' => '14',
+  'tag' => 
+  array (
+    0 => '1',
+  ),
+  'arc_thumb' => '',
+  'arc_digest' => 'a',
+  'arc_content' => '<p>a</p>',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T22:49:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.072445s][吞吐率：13.80req/s] [内存消耗：2,251.11kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010426s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006956s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000843s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006584s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:49:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.058966s][吞吐率：16.96req/s] [内存消耗：2,251.27kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006906s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000407s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.007186s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:58:22+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.077434s][吞吐率：12.91req/s] [内存消耗：2,404.98kb] [文件加载：62]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004600s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.008063s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000462s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.007233s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000449s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:58:43+08:00 ] 127.0.0.1 127.0.0.1 POST /system/component/fileslists.html?&type=image
+[ log ] www.myblog.com/system/component/fileslists.html?&type=image [运行时间：0.564565s][吞吐率：1.77req/s] [内存消耗：1,964.66kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'system',
+    1 => 'component',
+    2 => 'fileslists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.myblog.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'image',
+  'extensions' => 'gif,jpg,jpeg,png',
+)
+[ info ] [ RUN ] app\system\controller\component->filesLists[ D:\WWW\myBlog\application\system\controller\Component.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002044s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_attachment` [ RunTime:0.095643s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') LIMIT 1 [ RunTime:0.054860s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') ORDER BY id desc LIMIT 0,10 [ RunTime:0.001614s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:58:49+08:00 ] 127.0.0.1 127.0.0.1 POST /system/component/uploader.html
+[ log ] www.myblog.com/system/component/uploader.html [运行时间：0.154872s][吞吐率：6.46req/s] [内存消耗：1,925.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'system',
+    1 => 'component',
+    2 => 'uploader',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => '*/*',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryj2HcUH88g4GYAHCn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'origin' => 'http://www.myblog.com',
+  'content-length' => '144835',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'D6H1(1R4`VM_1{E4SZ{WMT4.png',
+  'year' => '2099',
+  'id' => 'WU_FILE_0',
+  'type' => 'image/png',
+  'lastModifiedDate' => 'Sun Apr 23 2017 22:36:59 GMT+0800 (中国标准时间)',
+  'size' => '143970',
+)
+[ info ] [ RUN ] app\system\controller\component->uploader[ D:\WWW\myBlog\application\system\controller\Component.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001116s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_attachment` [ RunTime:0.012014s ]
+[ sql ] [ SQL ] INSERT INTO `blog_attachment` (`name` , `filename` , `path` , `extension` , `createtime` , `size`) VALUES ('D6H1(1R4`VM_1{E4SZ{WMT4.png' , '674995ec2ff4d774447bdf4fdbe72e72.png' , 'uploads/20170612/674995ec2ff4d774447bdf4fdbe72e72.png' , 'png' , 1497279529 , 143970) [ RunTime:0.073152s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T22:59:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/resource/images/nopic.jpg
+[ log ] www.myblog.com/admin/article/resource/images/nopic.jpg [运行时间：0.060294s][吞吐率：16.59req/s] [内存消耗：2,058.84kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'resource',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'images' => 'nopic.jpg',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:28+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.071109s][吞吐率：14.06req/s] [内存消耗：1,348.00kb] [文件加载：50]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[D:\WWW\myBlog\application\common\model\Article.php:30]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:45+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.068391s][吞吐率：14.62req/s] [内存消耗：2,253.44kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002694s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.008754s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000592s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006996s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000416s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:47+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.040389s][吞吐率：24.76req/s] [内存消耗：2,061.26kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '81',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '',
+  'arc_author' => '',
+  'arc_sort' => '100',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.076031s][吞吐率：13.15req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010200s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006573s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000453s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009981s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006597s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:55+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.045492s][吞吐率：21.98req/s] [内存消耗：2,061.25kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '84',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => '',
+  'arc_sort' => '100',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:25:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.060775s][吞吐率：16.45req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000931s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.007389s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000463s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006730s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000410s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:11+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.040531s][吞吐率：24.67req/s] [内存消耗：2,061.29kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:14+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.064939s][吞吐率：15.40req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.007100s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000477s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006504s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:24+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.040382s][吞吐率：24.76req/s] [内存消耗：2,061.29kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '0',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:27+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.066741s][吞吐率：14.98req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000822s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.007383s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000437s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006567s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000390s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:47+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.042389s][吞吐率：23.59req/s] [内存消耗：2,061.29kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '0',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.069890s][吞吐率：14.31req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010318s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.007625s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000460s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006357s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000388s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:26:57+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.044165s][吞吐率：22.64req/s] [内存消耗：2,061.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '89',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '101',
+  'cate_id' => '0',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:00+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.101943s][吞吐率：9.81req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010329s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.008962s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000659s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.009191s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000514s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:08+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.044147s][吞吐率：22.65req/s] [内存消耗：2,061.34kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '90',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '101',
+  'cate_id' => '21',
+  'arc_thumb' => '',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:11+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.082582s][吞吐率：12.11req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010253s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.007499s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000502s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.007821s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000459s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:17+08:00 ] 127.0.0.1 127.0.0.1 POST /system/component/fileslists.html?&type=image
+[ log ] www.myblog.com/system/component/fileslists.html?&type=image [运行时间：0.071694s][吞吐率：13.95req/s] [内存消耗：1,965.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'system',
+    1 => 'component',
+    2 => 'fileslists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.myblog.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'image',
+  'extensions' => 'gif,jpg,jpeg,png',
+)
+[ info ] [ RUN ] app\system\controller\component->filesLists[ D:\WWW\myBlog\application\system\controller\Component.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010561s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_attachment` [ RunTime:0.007347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') LIMIT 1 [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') ORDER BY id desc LIMIT 0,10 [ RunTime:0.000557s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:20+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.040553s][吞吐率：24.66req/s] [内存消耗：2,061.48kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '177',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '101',
+  'cate_id' => '21',
+  'arc_thumb' => 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png',
+  'arc_digest' => '',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:24+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.073045s][吞吐率：13.69req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000897s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006583s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000517s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000834s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006523s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:31+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.050495s][吞吐率：19.80req/s] [内存消耗：2,061.46kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '181',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '101',
+  'cate_id' => '21',
+  'arc_thumb' => 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png',
+  'arc_digest' => '1111',
+  'arc_content' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:34+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.071580s][吞吐率：13.97req/s] [内存消耗：2,253.24kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006618s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000443s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.006815s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:47+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.376943s][吞吐率：2.65req/s] [内存消耗：2,157.10kb] [文件加载：59]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '206',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => '111',
+  'arc_author' => 'admin',
+  'arc_sort' => '101',
+  'cate_id' => '21',
+  'arc_thumb' => 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png',
+  'arc_digest' => '11111',
+  'arc_content' => '<p>1111111</p>',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000885s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007837s ]
+[ sql ] [ SQL ] INSERT INTO `blog_article` (`arc_title` , `arc_author` , `arc_sort` , `cate_id` , `arc_thumb` , `arc_digest` , `arc_content`) VALUES ('111' , 'admin' , 101 , 21 , 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png' , '11111' , '<p>1111111</p>') [ RunTime:0.320932s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:27:50+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.065179s][吞吐率：15.34req/s] [内存消耗：2,141.81kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000888s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007062s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000617s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:57:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.061495s][吞吐率：16.26req/s] [内存消耗：2,145.30kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002788s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.008964s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.001323s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:57:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.072498s][吞吐率：13.79req/s] [内存消耗：2,256.73kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\store.html [ array (
+  0 => 'cateData',
+  1 => 'tagList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010475s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.006931s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000711s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001060s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.007285s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000512s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:57:31+08:00 ] 127.0.0.1 127.0.0.1 POST /system/component/fileslists.html?&type=image
+[ log ] www.myblog.com/system/component/fileslists.html?&type=image [运行时间：0.062522s][吞吐率：15.99req/s] [内存消耗：1,965.05kb] [文件加载：56]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'system',
+    1 => 'component',
+    2 => 'fileslists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.myblog.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '33',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'image',
+  'extensions' => 'gif,jpg,jpeg,png',
+)
+[ info ] [ RUN ] app\system\controller\component->filesLists[ D:\WWW\myBlog\application\system\controller\Component.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_attachment` [ RunTime:0.007548s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_attachment` WHERE  `extension` IN ('gif','jpg','jpeg','png') ORDER BY id desc LIMIT 0,10 [ RunTime:0.000494s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:57:50+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/store.html
+[ log ] www.myblog.com/admin/article/store.html [运行时间：0.070152s][吞吐率：14.25req/s] [内存消耗：2,184.36kb] [文件加载：60]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'store',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.myblog.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '247',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+  'arc_title' => 'lyc123',
+  'arc_author' => 'lyc123',
+  'arc_sort' => '109',
+  'cate_id' => '17',
+  'tag' => 
+  array (
+    0 => '1',
+    1 => '2',
+    2 => '13',
+  ),
+  'arc_thumb' => 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png',
+  'arc_digest' => 'lyc123',
+  'arc_content' => '<p>lyc123</p>',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->store[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\WWW\myBlog\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010082s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007385s ]
+[ sql ] [ SQL ] INSERT INTO `blog_article` (`arc_title` , `arc_author` , `arc_sort` , `cate_id` , `arc_thumb` , `arc_digest` , `arc_content` , `admin_id` , `sendtime`) VALUES ('lyc123' , 'lyc123' , 109 , 17 , 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png' , 'lyc123' , '<p>lyc123</p>' , 2 , 1497283070) [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_arc_tag` [ RunTime:0.006769s ]
+[ sql ] [ SQL ] INSERT INTO `blog_arc_tag` (`arc_id` , `tag_id`) VALUES (7 , 1) [ RunTime:0.000454s ]
+[ sql ] [ SQL ] INSERT INTO `blog_arc_tag` (`arc_id` , `tag_id`) VALUES (7 , 2) [ RunTime:0.000194s ]
+[ sql ] [ SQL ] INSERT INTO `blog_arc_tag` (`arc_id` , `tag_id`) VALUES (7 , 13) [ RunTime:0.000196s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:57:53+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.058303s][吞吐率：17.15req/s] [内存消耗：2,162.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000882s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007352s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000716s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:58:38+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.051413s][吞吐率：19.45req/s] [内存消耗：2,162.35kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/store.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007231s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000637s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:58:44+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.053954s][吞吐率：18.53req/s] [内存消耗：2,162.20kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000898s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007304s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000665s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:58:46+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.051381s][吞吐率：19.46req/s] [内存消耗：2,162.35kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000864s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007342s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000641s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T23:58:49+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index.html
+[ log ] www.myblog.com/admin/article/index.html [运行时间：0.050844s][吞吐率：19.67req/s] [内存消耗：2,162.35kb] [文件加载：57]
+[ info ] [ LANG ] D:\WWW\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=6365759488; PHPSESSID=vib52s941lnpcc8ef3hbjnups7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3107.4 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\WWW\myBlog\application\admin\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\WWW\myBlog\public/../application/admin\view\article\index.html [ array (
+  0 => 'arcList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:dbname=blog;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.007325s ]
+[ sql ] [ SQL ] SELECT `a`.`arc_id`,`a`.`arc_title`,`a`.`arc_author`,`a`.`sendtime`,`a`.`arc_sort`,`c`.`cate_name` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 [ RunTime:0.000649s ]
+
+---------------------------------------------------------------

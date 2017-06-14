@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1497459350;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"D:\WWW\myBlog\public/../application/admin\view\article\edit.html";i:1497458242;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,85 +188,118 @@
             文章管理</a>
     </li>
     <li class="active">
-        <a href="">文章添加</a>
+        <a href="">文章编辑</a>
     </li>
 </ol>
 <ul class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="#tab1">文章管理</a></li>
-    <li><a href="<?php echo url('admin/Article/store'); ?>">文章添加</a></li>
+    <li><a href="<?php echo url('admin/Article/index'); ?>">文章管理</a></li>
+    <li class="active"><a href="">文章编辑</a></li>
 </ul>
-<form action="" method="post">
+<form class="form-horizontal" id="form"  action="" method="post">
     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">文章管理</h3>
+        </div>
         <div class="panel-body">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th width="5%">编号</th>
-                    <th>文章标题</th>
-                    <th>作者</th>
-                    <th width="5%">排序</th>
-                    <th>所属分类</th>
-                    <th>添加时间</th>
-                    <th width="200">操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php if(is_array($arcList) || $arcList instanceof \think\Collection || $arcList instanceof \think\Paginator): if( count($arcList)==0 ) : echo "" ;else: foreach($arcList as $key=>$vo): ?>
-                <tr>
-                    <td><?php echo $vo['arc_id']; ?></td>
-                    <td><?php echo $vo['arc_title']; ?></td>
-                    <td><?php echo $vo['arc_author']; ?></td>
-                    <td>
-                        <input style="width:50px" type="text" class="form-control" value="<?php echo $vo['arc_sort']; ?>" onblur="upSort(this,<?php echo $vo['arc_id']; ?>)">
-                    </td>
-                    <td><?php echo $vo['cate_name']; ?></td>
-                    <td><?php echo date('Y-m-d',$vo['sendtime']); ?></td>
-                    <td>
-                        <div class="btn-group">
-                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="<?php echo url('edit',['arc_id'=>$vo['arc_id']]); ?>">编辑</a></li>
-                                <li class="divider"></li>
-                                <li><a href="javascript:del(<?php echo $vo['arc_id']; ?>);">删除到回收站</a></li>
-                            </ul>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章标题</label>
+                <div class="col-sm-9">
+                    <input type="text" name="arc_title" value="<?php echo $oldData['arc_title']; ?>"  class="form-control" placeholder="文章标题">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章作者</label>
+                <div class="col-sm-9">
+                    <input type="text" value="<?php echo $oldData['arc_author']; ?>" name="arc_author"  class="form-control" placeholder="文章作者">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章排序</label>
+                <div class="col-sm-9">
+                    <input type="number" value="<?php echo $oldData['arc_sort']; ?>"  name="arc_sort" value="100"  class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">所属分类</label>
+                <div class="col-sm-9">
+                    <select class="js-example-basic-single form-control" name="cate_id">
+                        <option value="0">请选择分类</option>
+                        <?php if(is_array($cateData) || $cateData instanceof \think\Collection || $cateData instanceof \think\Paginator): if( count($cateData)==0 ) : echo "" ;else: foreach($cateData as $key=>$vo): ?>
+                        <option <?php if($oldData['cate_id']==$vo['cate_id']): ?> selected <?php endif; ?> value="<?php echo $vo['cate_id']; ?>"><?php echo $vo['_cate_name']; ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">标签</label>
+                <div class="col-sm-9">
+                    <?php if(is_array($tagList) || $tagList instanceof \think\Collection || $tagList instanceof \think\Paginator): if( count($tagList)==0 ) : echo "" ;else: foreach($tagList as $key=>$vo): ?>
+                    <label class="checkbox-inline">
+                        <input  <?php if(in_array($vo['tag_id'],$tagIds)): ?> checked <?php endif; ?> type="checkbox" name="tag[]" value="<?php echo $vo['tag_id']; ?>"><?php echo $vo['tag_name']; ?>
+                    </label>
+                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">缩略图</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="arc_thumb" readonly="" value="<?php echo $oldData['arc_thumb']; ?>">
+                        <div class="input-group-btn">
+                            <button onclick="upImage(this)" class="btn btn-default" type="button">选择图片</button>
                         </div>
-                    </td>
-                </tr>
-                <?php endforeach; endif; else: echo "" ;endif; ?>
-                </tbody>
-            </table>
+                    </div>
+                    <div class="input-group" style="margin-top:5px;">
+                        <img src="__STATIC__/images/nopic.jpg" class="img-responsive img-thumbnail" width="150">
+                        <em class="close" style="position:absolute; top: 0px; right: -14px;" title="删除这张图片" onclick="removeImg(this)">×</em>
+                    </div>
+                </div>
+                <script>
+                    //上传图片
+                    function upImage(obj) {
+                        require(['util'], function (util) {
+                            options = {
+                                multiple: false,//是否允许多图上传
+                                //data是向后台服务器提交的POST数据
+                                data:{name:'博客',year:2099},
+                            };
+                            util.image(function (images) {          //上传成功的图片，数组类型
+
+                                $("[name='arc_thumb']").val(images[0]);
+                                $(".img-thumbnail").attr('src', images[0]);
+                            }, options)
+                        });
+                    }
+                    //移除图片
+                    function removeImg(obj) {
+                        $(obj).prev('img').attr('src', 'resource/images/nopic.jpg');
+                        $(obj).parent().prev().find('input').val('');
+                    }
+                </script>
+            </div>
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">文章摘要</label>
+                <div class="col-sm-9">
+                    <textarea name="arc_digest" class="form-control"  placeholder="文章摘要"><?php echo $oldData['arc_digest']; ?></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for=""  class="col-sm-2 control-label">文章内容</label>
+                <div class="col-sm-9">
+                    <textarea id="container" name="arc_content"  style="height:300px;width:100%;"><?php echo $oldData['arc_content']; ?></textarea>
+                    <script>
+                        util.ueditor('container', {hash:2,data:'hd'}, function (editor) {
+                            //这是回调函数 editor是百度编辑器实例
+                        });
+                    </script>
+                    <!--第二个参数为添加到数据表中字段，hash为确定上传文件标识（可以以用户编号，标识为此用户上传的文件，系统使用这个字段值来显示文件列表），data为数据表中的data字段值，开发者根据业务需要自行添加-->
+                </div>
+            </div>
         </div>
     </div>
+    <input type="hidden" name="arc_id" value="<?php echo input('param.arc_id'); ?>">
+    <button class="btn btn-primary" type="submit">确定</button>
 </form>
-<div class="pagination pagination-sm pull-right">
-    <?php echo $arcList->render(); ?>
-</div>
-<script>
-    //更新排序
-    function upSort(obj,arc_id) {
-        $.post("<?php echo url('upSort'); ?>",{arc_sort:$(obj).val(),arc_id:arc_id},function (res) {
-            if(res.code){
-                //修改成功
-                util.message(res.msg,'refresh','success');
-            }else{
-                //修改失败
-                util.message(res.msg,'back','error');
-            }
-        },'json');
-    }
-    //删除文章到回收站
-    function del(arc_id){
-        $.post("<?php echo url('del'); ?>",{arc_id:arc_id},function(res){
-            if(res.code){
-                //操作成功
-                util.message(res.msg,'refresh','success');
-            }else{
-                //操作失败
-                util.message(res.msg,'back','error');
-            }
-        },'json');
-    }
-</script>
 
         </div>
     </div>

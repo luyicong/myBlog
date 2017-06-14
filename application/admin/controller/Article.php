@@ -59,4 +59,50 @@ class Article extends Controller
             }
         }
     }
+    /**
+     * 文章编辑
+     */
+    public function edit(){
+        if(request()->isPost()){
+           //halt(input('post.'));
+            $res = $this->db->edit(input('post.'));
+            if($res['valid']){
+                //编辑成功
+                $this->success($res['msg'],'index');exit;
+            }else{
+                //编辑失败
+                $this->error($res['msg']);exit;
+            }
+        }
+        $arc_id = input('param.arc_id');
+        //1.获取所有分类数据
+        $cateData = (new Category())->getAllCate();
+        $this->assign('cateData',$cateData);
+        //2.获取所有标签
+        $tagList = db('tag')->select();
+        $this->assign('tagList',$tagList);
+        //3.获取旧数据
+        $oldData = db('article')->where('arc_id',$arc_id)->find();
+        $this->assign('oldData',$oldData);
+        //4.获取所属标签
+        $tagIds = db('arc_tag')->where('arc_id',$arc_id)->column('tag_id');
+        $this->assign('tagIds',$tagIds);
+        return $this->fetch();
+    }
+    /**
+     * 删除文章到回收站
+     */
+    public function del(){
+        if(request()->isAjax()){
+            //setField方法更新某一个字段的值
+            $res = db('article')->where('arc_id',input('post.')['arc_id'])->setField('is_recycle',1);
+            if($res){
+                //修改成功
+                $this->success('删除到回收站成功！','index');exit;
+            }else{
+                //修改失败
+                $this->error('删除到回收站失败！');exit;
+            }
+        }
+    }
 }

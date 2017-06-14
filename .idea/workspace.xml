@@ -5,14 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/article/index.html" afterPath="$PROJECT_DIR$/application/admin/view/article/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/admin/view/article/store.html" afterPath="$PROJECT_DIR$/application/admin/view/article/store.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/common/model/Article.php" afterPath="$PROJECT_DIR$/application/common/model/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/3dc41079c2df273a8347ed8208448f60.php" afterPath="$PROJECT_DIR$/runtime/temp/3dc41079c2df273a8347ed8208448f60.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/475849afd84772a87dc66730aa681ffa.php" afterPath="$PROJECT_DIR$/runtime/temp/475849afd84772a87dc66730aa681ffa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/9e16e8af9cd7eab88cbf74d41e863085.php" afterPath="$PROJECT_DIR$/runtime/temp/9e16e8af9cd7eab88cbf74d41e863085.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/a0f75dc2a4fddf30b78c2f406abec496.php" afterPath="$PROJECT_DIR$/runtime/temp/a0f75dc2a4fddf30b78c2f406abec496.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/a6de2fc71d92f5a65e736ea50d2f94e2.php" afterPath="$PROJECT_DIR$/runtime/temp/a6de2fc71d92f5a65e736ea50d2f94e2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/temp/a87ad87a9070c96e4adf4be197057cc3.php" afterPath="$PROJECT_DIR$/runtime/temp/a87ad87a9070c96e4adf4be197057cc3.php" />
     </list>
     <ignored path="myblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,28 +30,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/tag/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="1200">
               <caret line="48" column="12" selection-start-line="48" selection-start-column="0" selection-end-line="50" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="26" />
+            <state relative-caret-position="239">
+              <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -66,7 +50,7 @@
       <file leaf-file-name="store.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
+            <state relative-caret-position="2500">
               <caret line="100" column="58" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -77,14 +61,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="239">
+              <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="e#40#70#0#PHP" expanded="true" />
+                <element signature="e#1538#2469#0#PHP" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/view/article/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="106" column="120" selection-start-line="106" selection-start-column="120" selection-end-line="106" selection-end-column="120" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/validate/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="29" column="20" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1950">
+              <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -92,7 +119,7 @@
       <file leaf-file-name="Tag.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/controller/Tag.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="475">
               <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding>
                 <element signature="e#514#946#0#PHP" expanded="false" />
@@ -104,31 +131,9 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/common/model/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="1550">
               <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Component.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/system/controller/Component.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding>
-                <element signature="e#41#62#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,9 +188,10 @@
         <option value="$PROJECT_DIR$/application/admin/view/article/store.html" />
         <option value="$PROJECT_DIR$/application/admin/validate/Article.php" />
         <option value="$PROJECT_DIR$/application/common/model/ArcTag.php" />
+        <option value="$PROJECT_DIR$/application/admin/view/article/edit.html" />
         <option value="$PROJECT_DIR$/application/common/model/Article.php" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/index.html" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
       </list>
     </option>
   </component>
@@ -449,6 +455,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\myBlog\application\admin\view\article" />
       <recent name="D:\WWW\myBlog\public\static\images" />
       <recent name="D:\WWW\myblog\public\static" />
       <recent name="D:\WWW\myblog\application\admin\view\category" />
@@ -530,18 +537,20 @@
       <workItem from="1495214863120" duration="40011000" />
       <workItem from="1496086970419" duration="14330000" />
       <workItem from="1497111405522" duration="7023000" />
-      <workItem from="1497277978358" duration="8922000" />
+      <workItem from="1497277978358" duration="9082000" />
+      <workItem from="1497369329477" duration="3491000" />
+      <workItem from="1497456269116" duration="3594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70286000" />
+    <option name="totallyTimeSpent" value="77531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15705615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18057664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21276596" sideWeight="0.5060698" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -576,14 +585,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/admin/view/tag/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -618,6 +619,7 @@
           <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
           <folding>
             <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#1538#2469#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,7 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="252" column="23" selection-start-line="252" selection-start-column="23" selection-end-line="252" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,14 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -866,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -880,10 +871,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/system/controller/Component.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="425">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
-            <element signature="e#41#62#0#PHP" expanded="true" />
+            <element signature="e#41#62#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/common/model/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="1550">
           <caret line="65" column="48" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
           <folding />
         </state>
@@ -922,25 +913,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/tag/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="1200">
           <caret line="48" column="12" selection-start-line="48" selection-start-column="0" selection-end-line="50" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/validate/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
+        <state relative-caret-position="475">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="e#514#946#0#PHP" expanded="false" />
@@ -950,7 +931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
+        <state relative-caret-position="2500">
           <caret line="100" column="58" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#div#5;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -960,29 +941,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="26" />
+        <state relative-caret-position="1950">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/validate/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="289">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/article/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="106" column="120" selection-start-line="106" selection-start-column="120" selection-end-line="106" selection-end-column="120" />
           <folding>
-            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
+        <state relative-caret-position="239">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="100" column="33" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+            <element signature="e#1538#2469#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

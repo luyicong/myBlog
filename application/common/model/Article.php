@@ -80,4 +80,27 @@ class Article extends Model
             return ['valid'=>0,'msg'=>$this->getError()];
         }
     }
+    /**
+     * 文章编辑
+     */
+    public function edit($data){
+        $res = $this->validate(true)->allowField(true)->save($data,[$this->pk=>$data['arc_id']]);
+        if($res){
+            //标签处理,先执行删除，再重新遍历添加
+            (new ArcTag())->where('arc_id',$data['arc_id'])->delete();
+            //文章所属标签中间表数据添加
+            foreach ($data['tag'] as $v){
+                $arcTagData = [
+                    'arc_id'=>$this->arc_id,
+                    'tag_id'=>$v
+                ];
+                (new ArcTag())->save( $arcTagData);
+            }
+            //编辑成功
+            return ['valid'=>1,'msg'=>'操作成功！'];
+        }else{
+            //编辑失败
+            return ['valid'=>0,'msg'=>$this->getError()];
+        }
+    }
 }

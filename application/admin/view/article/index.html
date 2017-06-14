@@ -43,9 +43,9 @@
                         <div class="btn-group">
                             <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">编辑</a></li>
+                                <li><a href="{:url('edit',['arc_id'=>$vo.arc_id])}">编辑</a></li>
                                 <li class="divider"></li>
-                                <li><a href="">删除到回收站</a></li>
+                                <li><a href="javascript:del({$vo.arc_id});">删除到回收站</a></li>
                             </ul>
                         </div>
                     </td>
@@ -60,6 +60,7 @@
     {$arcList->render()}
 </div>
 <script>
+    //更新排序
     function upSort(obj,arc_id) {
         $.post("{:url('upSort')}",{arc_sort:$(obj).val(),arc_id:arc_id},function (res) {
             if(res.code){
@@ -67,6 +68,18 @@
                 util.message(res.msg,'refresh','success');
             }else{
                 //修改失败
+                util.message(res.msg,'back','error');
+            }
+        },'json');
+    }
+    //删除文章到回收站
+    function del(arc_id){
+        $.post("{:url('del')}",{arc_id:arc_id},function(res){
+            if(res.code){
+                //操作成功
+                util.message(res.msg,'refresh','success');
+            }else{
+                //操作失败
                 util.message(res.msg,'back','error');
             }
         },'json');

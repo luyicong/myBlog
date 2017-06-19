@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1497459350;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\index.html";i:1497885929;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497884795;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +138,7 @@
                         <span class="pull-right"></span>
                         文章列表
                     </a>
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/recycle'); ?>" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         回收站
@@ -227,7 +227,7 @@
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="<?php echo url('edit',['arc_id'=>$vo['arc_id']]); ?>">编辑</a></li>
                                 <li class="divider"></li>
-                                <li><a href="javascript:del(<?php echo $vo['arc_id']; ?>);">删除到回收站</a></li>
+                                <li><a href="javascript:delToRecycle(<?php echo $vo['arc_id']; ?>);">删除到回收站</a></li>
                             </ul>
                         </div>
                     </td>
@@ -255,8 +255,8 @@
         },'json');
     }
     //删除文章到回收站
-    function del(arc_id){
-        $.post("<?php echo url('del'); ?>",{arc_id:arc_id},function(res){
+    function delToRecycle(arc_id){
+        $.post("<?php echo url('delToRecycle'); ?>",{arc_id:arc_id},function(res){
             if(res.code){
                 //操作成功
                 util.message(res.msg,'refresh','success');

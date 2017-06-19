@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1497279497;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497116033;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\WWW\myBlog\public/../application/admin\view\article\store.html";i:1497279497;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497884795;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,7 +138,7 @@
                         <span class="pull-right"></span>
                         文章列表
                     </a>
-                    <a href="" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/recycle'); ?>" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         回收站

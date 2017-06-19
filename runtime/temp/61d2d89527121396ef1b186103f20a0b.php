@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:67:"D:\WWW\myBlog\public/../application/admin\view\article\recycle.html";i:1497888430;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497889485;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,9 @@
             //框架目录
             'base': '__STATIC__/node_modules/hdjs',
             //上传文件后台地址
-            'uploader': "{:url('system/component/uploader')}",
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
             //获取文件列表的后台地址
-            'filesLists':"{:url('system/component/filesLists')}?",
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
         };
     </script>
     <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
@@ -72,9 +73,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{:url('admin/Entry/updatepwd')}">修改密码</a></li>
+                            <li><a href="<?php echo url('admin/Entry/updatepwd'); ?>">修改密码</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="{:url('admin/Entry/logout')}">退出</a></li>
+                            <li><a href="<?php echo url('admin/Entry/logout'); ?>">退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -98,7 +99,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
-                    <a href="{:url('admin/Category/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
                         <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
@@ -115,7 +116,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="{:url('admin/Tag/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -132,12 +133,12 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="{:url('admin/Article/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         文章列表
                     </a>
-                    <a href="{:url('admin/Article/recycle')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/recycle'); ?>" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         回收站
@@ -153,7 +154,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample4">
-                    <a href="{:url('admin/Link/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Link/index'); ?>" class="list-group-item">
                         <i class="fa fa-rss" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         友链首页
@@ -180,7 +181,92 @@
         </div>
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
-            {block name="content"}{/block}
+            
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            文章管理</a>
+    </li>
+    <li class="active">
+        <a href="">回收站管理</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#tab1">回收站管理</a></li>
+</ul>
+<form action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th width="5%">编号</th>
+                    <th>文章标题</th>
+                    <th>作者</th>
+                    <th width="5%">排序</th>
+                    <th>所属分类</th>
+                    <th>添加时间</th>
+                    <th width="200">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($arcList) || $arcList instanceof \think\Collection || $arcList instanceof \think\Paginator): if( count($arcList)==0 ) : echo "" ;else: foreach($arcList as $key=>$vo): ?>
+                <tr>
+                    <td><?php echo $vo['arc_id']; ?></td>
+                    <td><?php echo $vo['arc_title']; ?></td>
+                    <td><?php echo $vo['arc_author']; ?></td>
+                    <td>
+                        <input style="width:50px" type="text" class="form-control" value="<?php echo $vo['arc_sort']; ?>" onblur="upSort(this,<?php echo $vo['arc_id']; ?>)">
+                    </td>
+                    <td><?php echo $vo['cate_name']; ?></td>
+                    <td><?php echo date('Y-m-d',$vo['sendtime']); ?></td>
+                    <td>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="javascript:outToRecycle(<?php echo $vo['arc_id']; ?>);">恢复数据</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:del(<?php echo $vo['arc_id']; ?>);">彻底删除</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
+<div class="pagination pagination-sm pull-right">
+    <?php echo $arcList->render(); ?>
+</div>
+<script>
+    //恢复数据
+    function outToRecycle(arc_id){
+        $.post("<?php echo url('outToRecycle'); ?>",{arc_id:arc_id},function(res){
+            if(res.code){
+                //操作成功
+                util.message(res.msg,'refresh','success');
+            }else{
+                //操作失败
+                util.message(res.msg,'back','error');
+            }
+        },'json');
+    }
+    //彻底删除数据
+    function del(arc_id) {
+        $.post("<?php echo url('del'); ?>",{arc_id:arc_id},function(res){
+            if(res.code){
+                //操作成功
+                util.message(res.msg,'refresh','success');
+            }else{
+                //操作失败
+                util.message(res.msg,'back','error');
+            }
+        },'json');
+    }
+</script>
+
         </div>
     </div>
     <!--右侧主体区域部分结束 end-->

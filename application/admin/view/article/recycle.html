@@ -6,12 +6,11 @@
             文章管理</a>
     </li>
     <li class="active">
-        <a href="">文章添加</a>
+        <a href="">回收站管理</a>
     </li>
 </ol>
 <ul class="nav nav-tabs" role="tablist">
-    <li class="active"><a href="#tab1">文章管理</a></li>
-    <li><a href="{:url('admin/Article/store')}">文章添加</a></li>
+    <li class="active"><a href="#tab1">回收站管理</a></li>
 </ul>
 <form action="" method="post">
     <div class="panel panel-default">
@@ -43,9 +42,9 @@
                         <div class="btn-group">
                             <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="{:url('edit',['arc_id'=>$vo.arc_id])}">编辑</a></li>
+                                <li><a href="javascript:outToRecycle({$vo.arc_id});">恢复数据</a></li>
                                 <li class="divider"></li>
-                                <li><a href="javascript:delToRecycle({$vo.arc_id});">删除到回收站</a></li>
+                                <li><a href="javascript:del({$vo.arc_id});">彻底删除</a></li>
                             </ul>
                         </div>
                     </td>
@@ -60,21 +59,21 @@
     {$arcList->render()}
 </div>
 <script>
-    //更新排序
-    function upSort(obj,arc_id) {
-        $.post("{:url('upSort')}",{arc_sort:$(obj).val(),arc_id:arc_id},function (res) {
+    //恢复数据
+    function outToRecycle(arc_id){
+        $.post("{:url('outToRecycle')}",{arc_id:arc_id},function(res){
             if(res.code){
-                //修改成功
+                //操作成功
                 util.message(res.msg,'refresh','success');
             }else{
-                //修改失败
+                //操作失败
                 util.message(res.msg,'back','error');
             }
         },'json');
     }
-    //删除文章到回收站
-    function delToRecycle(arc_id){
-        $.post("{:url('delToRecycle')}",{arc_id:arc_id},function(res){
+    //彻底删除数据
+    function del(arc_id) {
+        $.post("{:url('del')}",{arc_id:arc_id},function(res){
             if(res.code){
                 //操作成功
                 util.message(res.msg,'refresh','success');

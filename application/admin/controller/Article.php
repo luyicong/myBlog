@@ -16,7 +16,7 @@ class Article extends Controller
 
     //文章列表
     public function index(){
-        $arcList = $this->db->getAll();
+        $arcList = $this->db->getAll(2);
         $this->assign('arcList',$arcList);
         return $this->fetch();
     }
@@ -92,7 +92,7 @@ class Article extends Controller
     /**
      * 删除文章到回收站
      */
-    public function del(){
+    public function delToRecycle(){
         if(request()->isAjax()){
             //setField方法更新某一个字段的值
             $res = db('article')->where('arc_id',input('post.')['arc_id'])->setField('is_recycle',1);
@@ -102,6 +102,43 @@ class Article extends Controller
             }else{
                 //修改失败
                 $this->error('删除到回收站失败！');exit;
+            }
+        }
+    }
+    /**
+     * 彻底删除数据
+     */
+    public function del(){
+        if(request()->isAjax()){
+            $res = db('article')->where('arc_id',input('post.')['arc_id'])->delete();
+            if($res){
+                $this->success('彻底删除数据成功！','index');exit;
+            }else{
+                $this->error('彻底删除数据失败，请稍后重试！');exit;
+            }
+        }
+    }
+    /**
+     * 文章回收站列表
+     */
+    public function recycle(){
+        $arcList = $this->db->getAll(1);
+        $this->assign('arcList',$arcList);
+        return $this->fetch();
+    }
+    /**
+     * 恢复数据
+     */
+    public function outToRecycle(){
+        if(request()->isAjax()){
+            //setField方法更新某一个字段的值
+            $res = db('article')->where('arc_id',input('post.')['arc_id'])->setField('is_recycle',2);
+            if($res){
+                //修改成功
+                $this->success('恢复数据成功！','index');exit;
+            }else{
+                //修改失败
+                $this->error('恢复数据失败，请稍后重试！');exit;
             }
         }
     }

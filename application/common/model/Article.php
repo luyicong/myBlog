@@ -27,12 +27,12 @@ class Article extends Model
     }
 
     //获取文章列表
-    public function getAll(){
+    public function getAll($is_recycle){
         //数据表关联，把文章表跟分类表关联，提出所属分类
         $data = db('article')
             ->alias('a')
             ->join('__CATE__ c','a.cate_id = c.cate_id')
-            ->where('a.is_recycle',2)
+            ->where('a.is_recycle',$is_recycle)
             //需要什么字段就从相应的表中提取出来,并分页
             ->field('a.arc_id,a.arc_title,a.arc_author,a.sendtime,a.arc_sort,c.cate_name')
             //首先按照文章的排序进行渲染 其次按照发布时间渲染，最后再根据文章id进行渲染

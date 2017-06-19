@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:62:"D:\WWW\myBlog\public/../application/admin\view\link\index.html";i:1497892923;s:56:"D:\WWW\myBlog\public/../application/admin\view\base.html";i:1497889485;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,9 @@
             //框架目录
             'base': '__STATIC__/node_modules/hdjs',
             //上传文件后台地址
-            'uploader': "{:url('system/component/uploader')}",
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
             //获取文件列表的后台地址
-            'filesLists':"{:url('system/component/filesLists')}?",
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
         };
     </script>
     <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
@@ -72,9 +73,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{:url('admin/Entry/updatepwd')}">修改密码</a></li>
+                            <li><a href="<?php echo url('admin/Entry/updatepwd'); ?>">修改密码</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="{:url('admin/Entry/logout')}">退出</a></li>
+                            <li><a href="<?php echo url('admin/Entry/logout'); ?>">退出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -98,7 +99,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample">
-                    <a href="{:url('admin/Category/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Category/index'); ?>" class="list-group-item">
                         <i class="fa fa-th" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         栏目列表
@@ -115,7 +116,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample2">
-                    <a href="{:url('admin/Tag/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Tag/index'); ?>" class="list-group-item">
                         <i class="fa fa-list-ol" aria-hidden="true"></i>
                         <span class="pull-right" href=""></span>
                         标签列表
@@ -132,12 +133,12 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample3">
-                    <a href="{:url('admin/Article/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/index'); ?>" class="list-group-item">
                         <i class="fa fa-list" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         文章列表
                     </a>
-                    <a href="{:url('admin/Article/recycle')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Article/recycle'); ?>" class="list-group-item">
                         <i class="fa fa-trash-o" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         回收站
@@ -153,7 +154,7 @@
                     </a>
                 </div>
                 <ul class="list-group menus collapse in" id="collapseExample4">
-                    <a href="{:url('admin/Link/index')}" class="list-group-item">
+                    <a href="<?php echo url('admin/Link/index'); ?>" class="list-group-item">
                         <i class="fa fa-rss" aria-hidden="true"></i>
                         <span class="pull-right"></span>
                         友链首页
@@ -180,7 +181,61 @@
         </div>
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
-            {block name="content"}{/block}
+            
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            友链管理</a>
+    </li>
+    <li class="active">
+        <a href="">友链展示</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="">友链管理</a></li>
+    <li><a href="<?php echo url('admin/Link/store'); ?>">添加友链</a></li>
+</ul>
+<form action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th width="80">编号</th>
+                    <th>链接名称</th>
+                    <th>链接地址</th>
+                    <th>排序</th>
+                    <th width="200">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php if(is_array($links) || $links instanceof \think\Collection || $links instanceof \think\Paginator): if( count($links)==0 ) : echo "" ;else: foreach($links as $key=>$vo): ?>
+                <tr>
+                    <td><?php echo $vo['link_id']; ?></td>
+                    <td><?php echo $vo['link_name']; ?></td>
+                    <td><?php echo $vo['link_url']; ?></td>
+                    <td><?php echo $vo['link_sort']; ?></td>
+                    <td>
+                        <div class="btn-group">
+                            <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="">编辑</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:;">删除</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</form>
+<div class="pagination pagination-sm pull-right">
+    <?php echo $links->render(); ?>
+</div>
+
         </div>
     </div>
     <!--右侧主体区域部分结束 end-->

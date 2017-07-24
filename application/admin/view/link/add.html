@@ -6,15 +6,15 @@
             友链管理</a>
     </li>
     <li class="active">
-        <a href="">编辑友链</a>
+        <a href="">添加友链</a>
     </li>
 
 </ol>
 <ul class="nav nav-tabs" role="tablist">
     <li><a href="{:url('admin/Link/index')}">友链首页</a></li>
-    <li class="active"><a href="javascript:;">编辑友链</a></li>
+    <li class="active"><a href="javascript:;">添加友链</a></li>
 </ul>
-<form class="form-horizontal" id="form" action="" method="post">
+<form class="form-horizontal" id="form" action="" method="post" onsubmit="return add()">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">友链管理</h3>
@@ -23,25 +23,24 @@
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">友链名称</label>
                 <div class="col-sm-9">
-                    <input type="text" name="link_name" value="{$linkData.link_name}"  class="form-control" placeholder="请填写友链名称">
+                    <input type="text" name="link_name"  class="form-control" placeholder="请填写友链名称">
                 </div>
             </div>
 
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">url地址</label>
                 <div class="col-sm-9">
-                    <input type="url" name="link_url" value="{$linkData.link_url}"  class="form-control" placeholder="">
+                    <input type="url" name="link_url"  class="form-control" placeholder="">
                 </div>
             </div>
             <div class="form-group">
                 <label for="" class="col-sm-2 control-label">排序</label>
                 <div class="col-sm-9">
-                    <input type="number" name="link_sort" value="{$linkData.link_sort}"  class="form-control" placeholder="">
+                    <input type="number" name="link_sort"  class="form-control" placeholder="">
                 </div>
             </div>
         </div>
     </div>
-    <input type="hidden" name="link_id" value="{:input('param.link_id')}">
     <button class="btn btn-primary" type="submit">确定</button>
 </form>
 

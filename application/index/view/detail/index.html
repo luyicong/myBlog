@@ -1,0 +1,24 @@
+{extend name='base' /}
+{block name="content"}
+<article>
+    <div class="_head">
+        <h1>{$aticleData['arc_title']}</h1>
+        <span>
+								作者：
+								<a href="">{$aticleData['arc_author']}</a>
+								</span>
+        •
+        <!--pubdate表⽰示发布⽇日期-->
+        <time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}">{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}</time>
+    </div>
+    <div class="_digest">
+        {$aticleData['arc_content']}
+    </div>
+    <div class="_footer">
+        <i class="glyphicon glyphicon-tags"></i>
+        {foreach $aticleData['tags'] as $vo}
+        <a href="">{$vo.tag_name}</a>、
+        {/foreach}
+    </div>
+</article>
+{/block}

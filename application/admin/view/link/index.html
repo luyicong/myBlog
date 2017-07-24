@@ -11,7 +11,7 @@
 </ol>
 <ul class="nav nav-tabs" role="tablist">
     <li class="active"><a href="">友链管理</a></li>
-    <li><a href="{:url('admin/Link/store')}">添加友链</a></li>
+    <li><a href="{:url('admin/Link/add')}">添加友链</a></li>
 </ul>
 <form action="" method="post">
     <div class="panel panel-default">
@@ -37,9 +37,9 @@
                         <div class="btn-group">
                             <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right">
-                                <li><a href="">编辑</a></li>
+                                <li><a href="{:url('store',['link_id'=>$vo.link_id])}">编辑</a></li>
                                 <li class="divider"></li>
-                                <li><a href="javascript:;">删除</a></li>
+                                <li><a href="javascript:;" onclick="del({$vo.link_id});" >删除</a></li>
                             </ul>
                         </div>
                     </td>
@@ -53,4 +53,14 @@
 <div class="pagination pagination-sm pull-right">
     {$links->render()}
 </div>
+<script>
+    function  del(link_id) {
+        //询问框
+        layer.confirm('确定要删除吗？', {
+            btn: ['确定','取消'] //按钮
+        }, function(){
+            window.location.href = "{:url('del')}"+"?link_id="+link_id;
+        });
+    }
+</script>
 {/block}

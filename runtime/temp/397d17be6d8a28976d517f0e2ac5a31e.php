@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\WWW\myBlog\public/../application/index\view\lists\index.html";i:1500825502;s:56:"D:\WWW\myBlog\public/../application/index\view\base.html";i:1500824644;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\WWW\myBlog\public/../application/index\view\lists\index.html";i:1500993203;s:56:"D:\WWW\myBlog\public/../application/index\view\base.html";i:1501000199;}*/ ?>
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title><?php echo $headConf['title']; ?></title>
     <!--描述和摘要-->
-    <meta name="Description" content=""/>
-    <meta name="Keywords" content=""/>
+    <meta name="keywords" content="<?php echo $_webSet['keywords']; ?>"/>
+    <meta name="description" content="<?php echo $_webSet['description']; ?>"/>
     <!--载入公共模板-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="__STATIC__/index/org/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
@@ -70,46 +70,41 @@
         <span>共 <?php echo $listHead['total']; ?> 篇文章</span>
     </div>
 </article>
+<?php foreach($articleList as $vo): ?>
 <article>
     <div class="_head">
-        <h1>标题</h1>
-        <span>
-                            作者：
-                            admin
-                            </span>
+        <h1><?php echo $vo['arc_title']; ?></h1>
+        <span>作者：<?php echo $vo['arc_author']; ?></span>
         •
-        <!--pubdate表⽰示发布⽇日期-->
-        <time pubdate="pubdate" datetime="">2015年11月06日11:34:39</time>
+        <time pubdate="pubdate" datetime="<?php echo date('Y年m月d日 h:i:s',$vo['sendtime']); ?>"><?php echo date('Y年m月d日 h:i:s',$vo['sendtime']); ?></time>
         •
-        分类：
-        <a href="">新闻</a>
+        分类：<a href="<?php echo url('index/lists/index',['cate_id'=>$vo['cate_id']]); ?>"><?php echo $vo['cate_name']; ?></a>
     </div>
     <div class="_digest">
-        <img src="./images/1.jpg"  class="img-responsive"/>
-        <p>
-            摘要
-        </p>
+        <img src="<?php echo $vo['arc_thumb']; ?>"  class="img-responsive"/>
+        <p><?php echo $vo['arc_digest']; ?></p>
     </div>
     <div class="_more">
-        <a href="" class="btn btn-default">阅读全文</a>
+        <a href="<?php echo url('index/detail/index',['arc_id'=>$vo['arc_id']]); ?>" class="btn btn-default">阅读全文</a>
     </div>
     <div class="_footer">
         <i class="glyphicon glyphicon-tags"></i>
-        <a href="">php</a>、
-        <a href="">php</a>、
-        <a href="">php</a>、
+        <?php foreach($vo['tags'] as $v): ?>
+        <a href="<?php echo url('index/lists/index',['tag_id'=>$v['tag_id']]); ?>"><?php echo $v['tag_name']; ?></a>、
+        <?php endforeach; ?>
     </div>
 </article>
+<?php endforeach; ?>
 
             </main>
             <aside class="col-md-4 hidden-sm hidden-xs">
                 <div class="_widget">
-                    <h4>关于后盾</h4>
+                    <h4>关于博客</h4>
                     <div class="_info">
-                        <p>最认真的PHP培训机构 只讲真功夫的PHP培训机构 最火爆的IT课程</p>
+                        <p><?php echo $_webSet['aboutblog']; ?></p>
                         <p>
                             <i class="glyphicon glyphicon-volume-down"></i>
-                            <a href="http://www.houdunwang.com" target="_blank">北京后盾网</a>
+                            <a href="__ROOT__/index.html" target="_blank">小聪个人技术博客</a>
                         </p>
                     </div>
                 </div>
@@ -141,7 +136,7 @@
                 <h4 class="_title">最新文章</h4>
                 <?php if(is_array($_newArticleData) || $_newArticleData instanceof \think\Collection || $_newArticleData instanceof \think\Paginator): if( count($_newArticleData)==0 ) : echo "" ;else: foreach($_newArticleData as $key=>$vo): ?>
                 <div class="_single">
-                    <p><a href=""><?php echo $vo['arc_title']; ?></a></p>
+                    <p><a href="<?php echo url('index/detail/index',['arc_id'=>$vo['arc_id']]); ?>"><?php echo $vo['arc_title']; ?></a></p>
                     <time><?php echo date('Y年m月d日 h:i:s',$vo['sendtime']); ?></time>
                 </div>
                 <?php endforeach; endif; else: echo "" ;endif; ?>

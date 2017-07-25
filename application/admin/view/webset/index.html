@@ -31,7 +31,11 @@
                     <td>{$vo.webset_name}</td>
                     <td>{$vo.webset_des}</td>
                     <td>
-                        <input type="text" class="form-control" value="{$vo.webset_value}" onblur="edit(this,{$vo.webset_id});">
+                        {if condition="($vo.webset_name=='keywords') OR ($vo.webset_name == 'description') OR ($vo.webset_name == 'aboutblog')" }
+                        <textarea class="form-control" rows="3" value="{$vo.webset_value}" onblur="edit(this,{$vo.webset_id})">{$vo.webset_value}</textarea>
+                        {else /}
+                        <input type="text" class="form-control" value="{$vo.webset_value}" onblur="edit(this,{$vo.webset_id})">
+                        {/if}
                     </td>
                 </tr>
                 {/foreach}

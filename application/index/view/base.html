@@ -3,8 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>{$headConf['title']}</title>
     <!--描述和摘要-->
-    <meta name="Description" content=""/>
-    <meta name="Keywords" content=""/>
+    <meta name="keywords" content="{$_webSet['keywords']}"/>
+    <meta name="description" content="{$_webSet['description']}"/>
     <!--载入公共模板-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="__STATIC__/index/org/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
@@ -62,12 +62,12 @@
             </main>
             <aside class="col-md-4 hidden-sm hidden-xs">
                 <div class="_widget">
-                    <h4>关于后盾</h4>
+                    <h4>关于博客</h4>
                     <div class="_info">
-                        <p>最认真的PHP培训机构 只讲真功夫的PHP培训机构 最火爆的IT课程</p>
+                        <p>{$_webSet['aboutblog']}</p>
                         <p>
                             <i class="glyphicon glyphicon-volume-down"></i>
-                            <a href="http://www.houdunwang.com" target="_blank">北京后盾网</a>
+                            <a href="__ROOT__/index.html" target="_blank">小聪个人技术博客</a>
                         </p>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                 <h4 class="_title">最新文章</h4>
                 {foreach name="_newArticleData" item="vo"}
                 <div class="_single">
-                    <p><a href="">{$vo.arc_title}</a></p>
+                    <p><a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}">{$vo.arc_title}</a></p>
                     <time>{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>
                 </div>
                 {/foreach}

@@ -17,5 +17,13 @@ return [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
     ],
-
+    '[cid]'     => [
+        ':cate_id'   => ['index/lists/index', ['method' => 'get'], ['id' => '\d+']]
+    ],
+    '[tid]'     => [
+        ':tag_id'   => ['index/lists/index', ['method' => 'get'], ['id' => '\d+']]
+    ],
+    '[detail]'     => [
+        ':arc_id'   => ['index/detail/index', ['method' => 'get'], ['id' => '\d+']]
+    ]
 ];

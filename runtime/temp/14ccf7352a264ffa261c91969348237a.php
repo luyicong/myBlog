@@ -1,11 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"D:\WWW\myBlog\public/../application/index\view\detail\index.html";i:1500823353;s:56:"D:\WWW\myBlog\public/../application/index\view\base.html";i:1500823790;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"D:\WWW\myBlog\public/../application/index\view\detail\index.html";i:1500997280;s:56:"D:\WWW\myBlog\public/../application/index\view\base.html";i:1501000199;}*/ ?>
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title><?php echo $headConf['title']; ?></title>
     <!--描述和摘要-->
-    <meta name="Description" content=""/>
-    <meta name="Keywords" content=""/>
+    <meta name="keywords" content="<?php echo $_webSet['keywords']; ?>"/>
+    <meta name="description" content="<?php echo $_webSet['description']; ?>"/>
     <!--载入公共模板-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="__STATIC__/index/org/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
@@ -44,9 +44,9 @@
 
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
                     <ul class="_menu" >
-                        <li><a href="/">首页</a></li>
+                        <li <?php if(!input('param.cate_id')): ?> class="_active"<?php endif; ?>><a href="__ROOT__/index.html">首页</a></li>
                         <?php foreach($_cateData as $vo): ?>
-                        <li><a href="<?php echo url('index/lists/index',['cate_id'=>$vo['cate_id']]); ?>"><?php echo $vo['cate_name']; ?></a></li>
+                        <li <?php if(input('param.cate_id')==$vo['cate_id']): ?>class="_active"<?php endif; ?>><a href="<?php echo url('index/lists/index',['cate_id'=>$vo['cate_id']]); ?>"><?php echo $vo['cate_name']; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -63,13 +63,12 @@
 <article>
     <div class="_head">
         <h1><?php echo $aticleData['arc_title']; ?></h1>
-        <span>
-								作者：
-								<a href=""><?php echo $aticleData['arc_author']; ?></a>
-								</span>
+        <span>作者：<a href="javascript:;"><?php echo $aticleData['arc_author']; ?></a></span>
         •
         <!--pubdate表⽰示发布⽇日期-->
         <time pubdate="pubdate" datetime="<?php echo date('Y年m月d日 h:i:s',$aticleData['sendtime']); ?>"><?php echo date('Y年m月d日 h:i:s',$aticleData['sendtime']); ?></time>
+        •
+        <span>点击：<span style="color:#999"><?php echo $aticleData['arc_click']; ?></span></span>
     </div>
     <div class="_digest">
         <?php echo $aticleData['arc_content']; ?>
@@ -85,12 +84,12 @@
             </main>
             <aside class="col-md-4 hidden-sm hidden-xs">
                 <div class="_widget">
-                    <h4>关于后盾</h4>
+                    <h4>关于博客</h4>
                     <div class="_info">
-                        <p>最认真的PHP培训机构 只讲真功夫的PHP培训机构 最火爆的IT课程</p>
+                        <p><?php echo $_webSet['aboutblog']; ?></p>
                         <p>
                             <i class="glyphicon glyphicon-volume-down"></i>
-                            <a href="http://www.houdunwang.com" target="_blank">北京后盾网</a>
+                            <a href="__ROOT__/index.html" target="_blank">小聪个人技术博客</a>
                         </p>
                     </div>
                 </div>
@@ -122,7 +121,7 @@
                 <h4 class="_title">最新文章</h4>
                 <?php if(is_array($_newArticleData) || $_newArticleData instanceof \think\Collection || $_newArticleData instanceof \think\Paginator): if( count($_newArticleData)==0 ) : echo "" ;else: foreach($_newArticleData as $key=>$vo): ?>
                 <div class="_single">
-                    <p><a href=""><?php echo $vo['arc_title']; ?></a></p>
+                    <p><a href="<?php echo url('index/detail/index',['arc_id'=>$vo['arc_id']]); ?>"><?php echo $vo['arc_title']; ?></a></p>
                     <time><?php echo date('Y年m月d日 h:i:s',$vo['sendtime']); ?></time>
                 </div>
                 <?php endforeach; endif; else: echo "" ;endif; ?>

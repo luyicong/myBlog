@@ -10,34 +10,29 @@
         <span>共 {$listHead['total']} 篇文章</span>
     </div>
 </article>
+{foreach $articleList as $vo}
 <article>
     <div class="_head">
-        <h1>标题</h1>
-        <span>
-                            作者：
-                            admin
-                            </span>
+        <h1>{$vo.arc_title}</h1>
+        <span>作者：{$vo.arc_author}</span>
         •
-        <!--pubdate表⽰示发布⽇日期-->
-        <time pubdate="pubdate" datetime="">2015年11月06日11:34:39</time>
+        <time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$vo.sendtime)}">{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>
         •
-        分类：
-        <a href="">新闻</a>
+        分类：<a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>
     </div>
     <div class="_digest">
-        <img src="./images/1.jpg"  class="img-responsive"/>
-        <p>
-            摘要
-        </p>
+        <img src="{$vo.arc_thumb}"  class="img-responsive"/>
+        <p>{$vo.arc_digest}</p>
     </div>
     <div class="_more">
-        <a href="" class="btn btn-default">阅读全文</a>
+        <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="btn btn-default">阅读全文</a>
     </div>
     <div class="_footer">
         <i class="glyphicon glyphicon-tags"></i>
-        <a href="">php</a>、
-        <a href="">php</a>、
-        <a href="">php</a>、
+        {foreach $vo.tags as $v}
+        <a href="{:url('index/lists/index',['tag_id'=>$v.tag_id])}">{$v.tag_name}</a>、
+        {/foreach}
     </div>
 </article>
+{/foreach}
 {/block}

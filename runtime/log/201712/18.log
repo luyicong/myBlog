@@ -18620,3 +18620,79 @@
 [ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000480s ]
 
 ---------------------------------------------------------------
+[ 2017-12-18T17:34:58+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/category/index.html
+[ log ] www.myblog.com/admin/category/index.html [运行时间：0.066847s][吞吐率：14.96req/s] [内存消耗：2,227.27kb] [文件加载：59]
+[ info ] [ LANG ] D:\www\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ej2b2lbv059buj8fnu08mjj8j6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\myBlog\application\admin\controller\Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\myBlog\public/../application/admin\view\category\index.html [ array (
+  0 => 'cateList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002125s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.029475s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000549s ]
+
+---------------------------------------------------------------
+[ 2017-12-18T17:42:51+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/category/index.html
+[ log ] www.myblog.com/admin/category/index.html [运行时间：0.065027s][吞吐率：15.38req/s] [内存消耗：2,227.27kb] [文件加载：59]
+[ info ] [ LANG ] D:\www\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=ej2b2lbv059buj8fnu08mjj8j6',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.myblog.com/admin/article/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.myblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ D:\www\myBlog\application\admin\controller\Category.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\myBlog\public/../application/admin\view\category\index.html [ array (
+  0 => 'cateList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001710s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.027252s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` [ RunTime:0.000495s ]
+
+---------------------------------------------------------------

@@ -103,4 +103,5 @@ class Article extends Model
             return ['valid'=>0,'msg'=>$this->getError()];
         }
     }
+
 }

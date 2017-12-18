@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>无限评论</title>
+    <meta name="keywords" content="无限评论" />
+    <meta name="description" content="" />
+    <link href="__PUBLIC__/Home/css/base.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/Home/js/modernizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="ibody">
+
+    <article>
+            <div class="pinglun ">
+                <div class="pl" type="button" >
+                    评论
+                </div>
+                <div class="collapse">
+                    <div class="well">
+                        <form action="{:U('Home/Index/addComment')}" method="post" role="form" >
+                            <div class="input-group">
+                                <span class="input-group">昵称</span>
+                                <input type="text" class="name1 input-group" placeholder="昵称" name="username" value="{$username}">
+                                <input type="hidden" class=" input-group" placeholder="" name="pid" value="0">
+                            </div>
+                            <div class="input-group">
+                                <span class="emotion input-group">表情</span>
+                            </div>
+                            <div class="input-group">
+                                <textarea class="comment" id="content-text" name="comment" rows="3" placeholder="请输入评论内容"></textarea>
+                            </div>
+                            <div class="input-group submit">
+                                <button class="submit-btn" type="submit" >提交</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <input type="hidden" name="pid" value="{$vo.author}"/>
+            <div >
+                <h2></h2>
+                <volist name="commentList" id="vo">
+                    <eq name="vo.pid" value="0"><hr class="solidline"/><else/><hr class="dottedline"/></eq>
+                    <div class="commentList "  style="padding-left:{$vo['level']-1}cm">
+                        <div><span class="user">
+                            <if condition="($vo.pauthor eq NULL)">{$vo.author}
+                                <else /> {$vo.author}<span class="black" style="color: #000101">回复</span>{$vo.pauthor}
+                            </if>
+                        </span><a class="hf" id="{$vo.id}" style="float: right">回复</a><span  class="hftime">{$vo.time|date="Y-m-d",###}</span></div>
+                        <div class="content">{$vo.content|reFace}</div>
+
+                    </div>
+
+                </volist>
+            </div>
+        </div>
+    </article>
+
+    <script src="__PUBLIC__/Home/js/silder.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.qqFace.js" ></script>
+    <script type="text/javascript">
+        $(function() {
+            $('.emotion').qqFace({
+                id:     'facebox', //表情ID
+                assign: 'content-text', //赋予到具体位置
+                path:   '../../comment/Public/Face/'    //表情路径
+            });
+            $(".hf").click(//点击回复按钮事件
+                    function(e){
+                        var $this = $(this);
+                        if($this.parent().parent().next().hasClass('hftext')){
+                            $this.parent().parent().next().remove();
+                        }else{
+                            $this.parent().parent().after('<div class="hftext"><form action="{:U('Home/Index/addComment')}" method="post" role="form" > <input name="article_id" type="hidden"  value="{$Article.id}" /><input id="pid" type="hidden" name="pid" value="{$vo.id}"/> <div class="input-group home-from-box"><span class="input-group">昵称</span><input type="text" class="input-group name1" placeholder="昵称" name="username" value="{$username}"></div><div class="input-group"> <span class="input-group emotion2">表情</span>  </div><div class="input-group">  <textarea style="display: inline" class="input-group comment" id="content-text2" name="comment" rows="3" placeholder="请输入评论内容"></textarea>  </div><div class="submit">  <input style="width:100px;height:35px "  class="submit-btn" type="submit" value="提交"></div> </form></div>');
+                            var v_id = $(e.target).attr('id');//获取元素id;
+                            $("#pid").val(v_id);
+                            $('.emotion2').qqFace({
+                                id:     'facebox', //表情ID
+                                assign: 'content-text2', //赋予到具体位置
+                                path:  '../../comment/Public/Face/'   //表情路径
+                            });
+                        }
+
+                         $(".submit-btn").click(function(){
+                         var $this=$(this);
+                         var name=$this.parent().siblings().children('.name1').val();
+                         var content=$this.parent().siblings().children('.comment').val();
+                         if(name==""||content==""){
+                         alert("昵称或者评论不能为空哦");
+                         }
+                         });
+                    });
+             $(".submit-btn").click(function(){
+             var $this=$(this);
+             var name=$this.parent().siblings().children('.name1').val();
+             var content=$this.parent().siblings().children('.comment').val();
+             if(name==""||content==""){             alert("昵称或者评论不能为空哦");
+
+             }
+             });
+
+
+        });
+
+
+
+    </script>
+
+    <div class="clear"></div>
+    <!-- 清除浮动 -->
+</div>
+</body>
+</html>
+

@@ -21,6 +21,46 @@ class Detail extends Common
             ->where('at.arc_id',$articleData['arc_id'])
             ->field('t.tag_id,t.tag_name')->select();
         $this->assign('aticleData',$articleData);
+
+        //获取当前文章的评论
+//        $comments = db('comment')
+//            ->where('tid',$arc_id)
+//            ->where('isShow',1)
+//            ->paginate(5);
+        $commentList = array();
+
+        $comments = $this->CommentList($arc_id,$pid=0,$commentList,$spac=0,$pauthor=NULL);
+
+        $this->assign('comments',$comments);
+
+//        halt($comments);
+
         return $this->fetch();
+    }
+
+    //评论列表
+    //评论列表
+    function CommentList($tid,$pid=0,&$commentList=array(),$spac=0,$pauthor=NULL){
+        static $i=0;
+        $spac=$spac+1;//初始为1级评论
+        $pauthor=$pauthor;
+        $List=db('comment')
+            ->where('pid',$pid)
+            ->where('tid',$tid)
+            ->field('id,pid,tid,content,add_time,author')
+            ->select();
+        foreach($List as $k=>$v){
+            $commentList[$i]['level']=$spac;//评论层级
+            $commentList[$i]['author']=$v['author'];
+            $commentList[$i]['id']=$v['id'];
+            $commentList[$i]['tid']=$v['tid'];//当前文章id
+            $commentList[$i]['pid']=$v['pid'];//此条评论的父id
+            $commentList[$i]['content']=$v['content'];
+            $commentList[$i]['time']=$v['add_time'];
+            $commentList[$i]['pauthor']=$pauthor;
+            $i++;
+            $this->CommentList($v['tid'],$v['id'],$commentList,$spac,$v['author']);
+        }
+        return $commentList;
     }
 }

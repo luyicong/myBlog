@@ -13,11 +13,37 @@
     <div class="_digest">
         {$aticleData['arc_content']}
     </div>
+    <!--<div class="pagination pagination-sm pull-right">-->
+
+    <!--</div>-->
     <div class="_footer">
         <i class="glyphicon glyphicon-tags"></i>
         {foreach $aticleData['tags'] as $vo}
         <a href="">{$vo.tag_name}</a>、
         {/foreach}
     </div>
+
+
+    <div class="comments_wrap">
+        <h3>评论列表：</h3>
+        {foreach name="comments" item="vo"}
+        {eq name="vo.pid" value="0"}<hr class="solidline"/>{else/}<hr class="dottedline"/>{/eq}
+        <div class="commentList"  style="padding-left:{$vo.level}cm;text-align:left">
+            <div>
+                <span class="user">
+                {if condition="($vo.pauthor eq NULL)"}{$vo.author}
+                    {else /} {$vo.author}<span class="black" style="color: #000101">回复</span>{$vo.pauthor}
+                {/if}
+                </span>
+                <a class="hf" id="{$vo.id}" style="float: right">回复</a>
+                <span  class="hftime">{$vo.time|date="Y-m-d",###}</span>
+            </div>
+            <div class="content">{$vo.content|reFace}</div>
+
+        </div>
+
+        {/foreach}
+    </div>
+
 </article>
 {/block}

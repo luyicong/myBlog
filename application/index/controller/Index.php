@@ -7,7 +7,7 @@ class Index extends Common
     public function index()
     {
         //首页head数据
-        $headConf = ['title'=>'小聪个人技术博客--首页'];
+        $headConf = ['title'=>'yoho167技术博客--首页'];
         $this->assign('headConf',$headConf);
         //获取首页文章数据
         $articleData = db('article')->alias('a')
@@ -22,6 +22,7 @@ class Index extends Common
                 ->join('__TAG__ t', 'at.tag_id=t.tag_id')
                 ->where('at.arc_id', $v['arc_id'])->field('t.tag_id,t.tag_name')->select();
         }
+//        halt($articleData);
         $this->assign('articleData',$articleData);
         return $this->fetch();
     }

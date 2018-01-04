@@ -29,9 +29,9 @@ class Common extends Controller
         $newArticleData = $this->loadNewArticleData();
         $this->assign('_newArticleData',$newArticleData);
     }
-    //获取最新文章书数据
+    //获取最新文章数据
     protected function loadNewArticleData(){
-        return db('article')->where('is_recycle',2)->order('sendtime desc')->limit(3)->field('arc_id,arc_title,sendtime')->select();
+        return db('article')->where('is_recycle',2)->order('sendtime desc')->limit(5)->field('arc_id,arc_title,sendtime')->select();
     }
     //获取友情链接数据
     protected function loadLinkData(){

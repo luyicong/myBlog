@@ -8,7 +8,7 @@ class Lists extends Common
 {
     //分类列表
     public function Index(){
-        $headConf = ['title'=>'小聪个人技术博客--文章列表页'];
+        $headConf = ['title'=>'yoho167技术博客--文章列表页'];
         $this->assign('headConf',$headConf);
         //列表数据
         $cate_id = input('param.cate_id');

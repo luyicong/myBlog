@@ -21,6 +21,7 @@
                 <tr>
                     <th width="5%">编号</th>
                     <th>文章标题</th>
+                    <th>首页轮播</th>
                     <th>作者</th>
                     <th width="5%">排序</th>
                     <th>所属分类</th>
@@ -33,6 +34,7 @@
                 <tr>
                     <td>{$vo.arc_id}</td>
                     <td>{$vo.arc_title}</td>
+                    <td>是</td>
                     <td>{$vo.arc_author}</td>
                     <td>
                         <input style="width:50px" type="text" class="form-control" value="{$vo.arc_sort}" onblur="upSort(this,{$vo.arc_id})">

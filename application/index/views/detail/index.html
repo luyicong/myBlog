@@ -1,0 +1,49 @@
+{extend name='base' /}
+{block name="content"}
+<article>
+    <div class="_head">
+        <h1>{$aticleData['arc_title']}</h1>
+        <span>作者：<a href="javascript:;">{$aticleData['arc_author']}</a></span>
+        •
+        <!--pubdate表⽰示发布⽇日期-->
+        <time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}">{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}</time>
+        •
+        <span>点击：<span style="color:#999">{$aticleData['arc_click']}</span></span>
+    </div>
+    <div class="_digest">
+        {$aticleData['arc_content']}
+    </div>
+    <!--<div class="pagination pagination-sm pull-right">-->
+
+    <!--</div>-->
+    <div class="_footer">
+        <i class="glyphicon glyphicon-tags"></i>
+        {foreach $aticleData['tags'] as $vo}
+        <a href="">{$vo.tag_name}</a>、
+        {/foreach}
+    </div>
+
+
+    <div class="comments_wrap">
+        <h3>评论列表：</h3>
+        {foreach name="comments" item="vo"}
+        {eq name="vo.pid" value="0"}<hr class="solidline"/>{else/}<hr class="dottedline"/>{/eq}
+        <div class="commentList"  style="padding-left:{$vo.level}cm;text-align:left">
+            <div>
+                <span class="user">
+                {if condition="($vo.pauthor eq NULL)"}{$vo.author}
+                    {else /} {$vo.author}<span class="black" style="color: #000101">回复</span>{$vo.pauthor}
+                {/if}
+                </span>
+                <a class="hf" id="{$vo.id}" style="float: right">回复</a>
+                <span  class="hftime">{$vo.time|date="Y-m-d",###}</span>
+            </div>
+            <div class="content">{$vo.content|reFace}</div>
+
+        </div>
+
+        {/foreach}
+    </div>
+
+</article>
+{/block}

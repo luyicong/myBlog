@@ -82,7 +82,7 @@ nav ul._menu li:hover a {
 section main article {
   background: white;
   padding: 50px;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {

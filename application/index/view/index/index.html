@@ -27,28 +27,99 @@
 </a>
 </div>
 </article>-->
-{foreach articleData as $vo}
-<article>
-    <div class="_head">
-        <h1>{$vo.arc_title}</h1>
-        <span>作者：{$vo.arc_author}</span>•
-        <!--pubdate表示发布日期-->
-        <time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$vo.sendtime)}">{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>•
-        分类：<a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>
+<!--{foreach articleData as $vo}-->
+<!--<article>-->
+    <!--<div class="_head">-->
+        <!--<h1>{$vo.arc_title}</h1>-->
+        <!--<span>作者：{$vo.arc_author}</span>•-->
+        <!--&lt;!&ndash;pubdate表示发布日期&ndash;&gt;-->
+        <!--<time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$vo.sendtime)}">{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>•-->
+        <!--分类：<a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>-->
+    <!--</div>-->
+    <!--<div class="_digest">-->
+        <!--<img src="{$vo.arc_thumb}"  class="img-responsive"/>-->
+        <!--<p>{$vo.arc_digest}</p>-->
+    <!--</div>-->
+    <!--<div class="_more">-->
+        <!--<a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="btn btn-default">阅读全文</a>-->
+    <!--</div>-->
+    <!--<div class="_footer">-->
+        <!--<i class="glyphicon glyphicon-tags"></i>-->
+        <!--{foreach $vo.tags as $subvo}-->
+        <!--<a href="{:url('index/lists/index',['tag_id'=>$subvo.tag_id])}">{$subvo.tag_name}</a>、-->
+        <!--{/foreach}-->
+    <!--</div>-->
+<!--</article>-->
+<!--{/foreach}-->
+<div class="banner_wrap">
+    <!--banner广告/start-->
+    <div class="banner_list">
+        <a href="/blog/detail.html" class="left_banner">
+            <img src="__STATIC__/new_index/img/banner.jpg" />
+            <span title="文章标题文章标题文章标题文章标题文章标题文章标题文章标题">文章标题文章标题文章标题文章标题文章标题文章标题文章标题</span>
+        </a>
+        <a href="#">
+            <img src="__STATIC__/new_index/img/banner.jpg" />
+            <span title="文章标题">文章标题</span>
+        </a>
+        <a href="#">
+            <img src="__STATIC__/new_index/img/banner.jpg" />
+            <span title="文章标题">文章标题</span>
+        </a>
+        <a href="#">
+            <img src="__STATIC__/new_index/img/banner.jpg" />
+            <span title="文章标题">文章标题</span>
+        </a>
+        <a href="#">
+            <img src="__STATIC__/new_index/img/banner.jpg" />
+            <span title="文章标题">文章标题</span>
+        </a>
     </div>
-    <div class="_digest">
-        <img src="{$vo.arc_thumb}"  class="img-responsive"/>
-        <p>{$vo.arc_digest}</p>
-    </div>
-    <div class="_more">
-        <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="btn btn-default">阅读全文</a>
-    </div>
-    <div class="_footer">
-        <i class="glyphicon glyphicon-tags"></i>
-        {foreach $vo.tags as $subvo}
-        <a href="{:url('index/lists/index',['tag_id'=>$subvo.tag_id])}">{$subvo.tag_name}</a>、
+    <!--banner广告/end-->
+</div>
+<div class="hot_recom_wrap">
+    <div class="list_title"><span>热门推荐</span></div>
+    <ul class="hot_article_list">
+        {foreach name="_newArticleData" item="vo"}
+        <li {if condition="$key<3"} class="hot" {/if}>
+            <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}">
+                <i>{$key+1}</i>
+                <p>{$vo.arc_title}</p>
+                <span>赞(100)</span>
+                <span>评论(100)</span>
+            </a>
+        </li>
+        {/foreach}
+    </ul>
+</div>
+<!--文章列表/start-->
+<div class="article_list">
+    <div class="list_title"><span>最新发表</span></div>
+    <div id="list_content" class="list_content">
+        {foreach articleData as $vo}
+        <div class="list_item">
+            <div class="arc_img">
+                <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}"><img src="{$vo.arc_thumb}"/></a>
+            </div>
+            <div class="arc_info">
+                <p class="arc_title">
+                    <a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}" class="cate_name"><i></i>{$vo.cate_name}<font>查看关于 {$vo.cate_name} 的文章</font></a>
+                    <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="title_text">{$vo.arc_title}</a>
+                </p>
+                <p class="tag">
+                    <span>发表于：{:date('Y年m月d日 h:i:s',$vo.sendtime)}</span>
+                </p>
+                <p class="arc_desc">{$vo.arc_digest}</p>
+                <p class="tag">
+                    <span>作者：{$vo.arc_author}</span>
+                    <span>查看(188)</span>
+                    <span>评论(188)</span>
+                    <span>赞(188)</span>
+                </p>
+            </div>
+        </div>
         {/foreach}
     </div>
-</article>
-{/foreach}
+</div>
+<!--文章列表/end-->
 {/block}

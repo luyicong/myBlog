@@ -1,38 +1,66 @@
 {extend name='base'/}
 {block name='content'}
-<article>
-    <div class="_head category_title">
-        <h2>
-            {$listHead['title']}：
-            <!--分类：-->
-            {$listHead['name']}
-        </h2>
-        <span>共 {$listHead['total']} 篇文章</span>
-    </div>
-</article>
-{foreach $articleList as $vo}
-<article>
-    <div class="_head">
-        <h1>{$vo.arc_title}</h1>
-        <span>作者：{$vo.arc_author}</span>
-        •
-        <time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$vo.sendtime)}">{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>
-        •
-        分类：<a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>
-    </div>
-    <div class="_digest">
-        <img src="{$vo.arc_thumb}"  class="img-responsive"/>
-        <p>{$vo.arc_digest}</p>
-    </div>
-    <div class="_more">
-        <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="btn btn-default">阅读全文</a>
-    </div>
-    <div class="_footer">
-        <i class="glyphicon glyphicon-tags"></i>
-        {foreach $vo.tags as $v}
-        <a href="{:url('index/lists/index',['tag_id'=>$v.tag_id])}">{$v.tag_name}</a>、
+<div class="article_list" style="margin-top:10px;">
+    <div class="list_title"><span>{$listHead['title']}：{$listHead['name']}</span></div>
+    <div id="list_content" class="list_content">
+        {foreach $articleList as $vo}
+        <div class="list_item">
+            <div class="arc_img">
+                <a href="#"><img src="{$vo.arc_thumb}"/></a>
+            </div>
+            <div class="arc_info">
+                <p class="arc_title">
+                    <!-- <a href="#" class="cate_name"><i></i>前端开发<font>查看关于 前端开发 的文章</font></a> -->
+                    <a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="title_text">{$vo.arc_title}</a>
+                </p>
+                <p class="tag">
+                    <span>发表于：{:date('Y年m月d日 h:i:s',$vo.sendtime)}</span>
+                </p>
+                <p class="arc_desc">{$vo.arc_digest}</p>
+                <p class="tag">
+                    <span>作者：{$vo.arc_author}</span>
+                    <span>查看(188)</span>
+                    <span>评论(188)</span>
+                    <span>赞(188)</span>
+                </p>
+            </div>
+        </div>
         {/foreach}
     </div>
-</article>
-{/foreach}
+</div>
+<!--<article>-->
+    <!--<div class="_head category_title">-->
+        <!--<h2>-->
+            <!--{$listHead['title']}：-->
+            <!--&lt;!&ndash;分类：&ndash;&gt;-->
+            <!--{$listHead['name']}-->
+        <!--</h2>-->
+        <!--<span>共 {$listHead['total']} 篇文章</span>-->
+    <!--</div>-->
+<!--</article>-->
+<!--{foreach $articleList as $vo}-->
+<!--<article>-->
+    <!--<div class="_head">-->
+        <!--<h1>{$vo.arc_title}</h1>-->
+        <!--<span>作者：{$vo.arc_author}</span>-->
+        <!--•-->
+        <!--<time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$vo.sendtime)}">{:date('Y年m月d日 h:i:s',$vo.sendtime)}</time>-->
+        <!--•-->
+        <!--分类：<a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a>-->
+    <!--</div>-->
+    <!--<div class="_digest">-->
+        <!--<img src="{$vo.arc_thumb}"  class="img-responsive"/>-->
+        <!--<p>{$vo.arc_digest}</p>-->
+    <!--</div>-->
+    <!--<div class="_more">-->
+        <!--<a href="{:url('index/detail/index',['arc_id'=>$vo.arc_id])}" class="btn btn-default">阅读全文</a>-->
+    <!--</div>-->
+    <!--<div class="_footer">-->
+        <!--<i class="glyphicon glyphicon-tags"></i>-->
+        <!--{foreach $vo.tags as $v}-->
+        <!--<a href="{:url('index/lists/index',['tag_id'=>$v.tag_id])}">{$v.tag_name}</a>、-->
+        <!--{/foreach}-->
+    <!--</div>-->
+<!--</article>-->
+<!--{/foreach}-->
 {/block}

@@ -7,6 +7,8 @@
     <link href="__STATIC__/admin/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="__STATIC__/admin/css/site.css" rel="stylesheet">
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="__STATIC__/node_modules/hdjs/dist/hdjs.css">
+    <link href="__STATIC__/lib/wangEditor.min.css">
     <script src="__STATIC__/admin/js/jquery.min.js"></script>
     <script src="__STATIC__/admin/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
     <script src="__STATIC__/layer/layer.js"></script>
@@ -22,19 +24,29 @@
         }
     </script>
     <script>
-        //模块配置项
-        var hdjs = {
-            //框架目录
-            'base': '__STATIC__/node_modules/hdjs',
-            //上传文件后台地址
-            'uploader': "{:url('system/component/uploader')}",
-            //获取文件列表的后台地址
-            'filesLists':"{:url('system/component/filesLists')}?",
-        };
+        // //模块配置项
+        window.hdjs={};
+        //组件目录必须绝对路径(在网站根目录时不用设置)
+        window.hdjs.base = '__STATIC__/node_modules/hdjs';
+        //上传文件后台地址
+        window.hdjs.uploader = "{:url('system/component/uploader')}";
+        //获取文件列表的后台地址
+        window.hdjs.filesLists = "{:url('system/component/filesLists')}?";
+
+        $(function(){
+            $('.dropdown-toggle').click(function(){
+                $(this).siblings('.dropdown-menu').css('display','block')
+            })
+            $(document).click(function(){
+                $('.dropdown-menu').css('display','none')
+            })
+        })
     </script>
-    <script src="__STATIC__/node_modules/hdjs/app/util.js"></script>
-    <script src="__STATIC__/node_modules/hdjs/require.js"></script>
-    <script src="__STATIC__/node_modules/hdjs/config.js"></script>
+    <!--<script src="__STATIC__/node_modules/hdjs/app/util.js"></script>-->
+    <!--<script src="__STATIC__/node_modules/hdjs/require.js"></script>-->
+    <script src="__STATIC__/lib/wangEditor.min.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/require.js"></script>
+    <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/config.js"></script>
     <style>
         i {
             color: #337ab7;
@@ -47,7 +59,7 @@
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <h4 style="display: inline;line-height: 50px;float: left;margin: 0px"><a href="index.html" style="color: white;margin-left: -14px">LYC个人博客后台管理系统</a>
+                <h4 style="display: inline;line-height: 50px;float: left;margin: 0px"><a href="index.html" style="color: white;margin-left: -14px">博客后台管理系统</a>
                 </h4>
                 <div class="navbar-header">
                     <ul class="nav navbar-nav">
@@ -59,9 +71,9 @@
                             <a href="http://fontawesome.dashgame.com/" target="_blank"><i
                                     class="fa fa-w fa-hand-o-right"></i> 图标库</a>
                         </li>
-                        <!--<li>-->
-                            <!--<a href="http://bbs.houdunwang.com" target="_blank"><i class="fa fa-w fa-forumbee"></i> 后盾网论坛</a>-->
-                        <!--</li>-->
+                        <li>
+                            <a href="/" target="_blank"><i class="fa fa-w fa-home"></i> 前台首页</a>
+                        </li>
                     </ul>
                 </div>
                 <ul class="nav navbar-nav navbar-right">

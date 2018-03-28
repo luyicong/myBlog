@@ -1,0 +1,25 @@
+[ 2018-03-06T10:24:00+08:00 ] 127.0.0.1 127.0.0.1 GET /show/4357.html
+[ log ] www.dm530.com/show/4357.html [运行时间：0.833934s][吞吐率：1.20req/s] [内存消耗：1,112.31kb] [文件加载：42]
+[ info ] [ LANG ] D:\www\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'show',
+    1 => '4357',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.dm530.com',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

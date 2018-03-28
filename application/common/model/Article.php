@@ -36,7 +36,7 @@ class Article extends Model
             //需要什么字段就从相应的表中提取出来,并分页
             ->field('a.arc_id,a.arc_title,a.arc_author,a.sendtime,a.arc_sort,c.cate_name')
             //首先按照文章的排序进行渲染 其次按照发布时间渲染，最后再根据文章id进行渲染
-            ->order('a.arc_sort desc,a.sendtime desc,a.arc_id desc')->paginate(5);
+            ->order('a.arc_sort desc,a.sendtime desc,a.arc_id desc')->paginate(10);
         return $data;
     }
     //添加文章
@@ -45,8 +45,10 @@ class Article extends Model
         if(!isset($data['tag'])){
             return ['valid'=>0,'msg'=>'请勾选文章所属标签！'];
         }
+//        halt(input('post.'));
         //1.执行验证 allowField(true)过滤非数据表字段
         $result = $this->validate(true)->allowField(true)->save($data);
+//        halt(input('post.'));
         //2.添加数据
         if($result){
             //文章所属标签中间表数据添加

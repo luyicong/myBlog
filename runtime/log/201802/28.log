@@ -1,0 +1,172 @@
+[ 2018-02-28T17:41:15+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ log ] master.test.dphub.sandai.net:80/ [运行时间：2.307463s][吞吐率：0.43req/s] [内存消耗：2,311.40kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '256',
+  'content-type' => 'application/octet-stream',
+  'host' => 'master.test.dphub.sandai.net:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\www\myBlog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\myBlog\public/../application/index\view\index\index.html [ array (
+  0 => '_webSet',
+  1 => '_cateData',
+  2 => '_allCateData',
+  3 => '_tagData',
+  4 => '_linkData',
+  5 => '_newArticleData',
+  6 => 'headConf',
+  7 => 'hotArcList',
+  8 => 'articleData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.156429s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_webset` [ RunTime:0.096095s ]
+[ sql ] [ SQL ] SELECT `webset_name`,`webset_value` FROM `blog_webset` [ RunTime:0.000694s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001896s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.063811s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` WHERE  `cate_pid` = 0 ORDER BY cate_sort desc [ RunTime:0.001542s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002034s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY cate_sort desc [ RunTime:0.000419s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002786s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.045125s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000222s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001890s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_link` [ RunTime:0.040821s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_link` ORDER BY link_sort desc [ RunTime:0.000257s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001635s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.122586s ]
+[ sql ] [ SQL ] SELECT `arc_id`,`arc_title`,`arc_click` FROM `blog_article` WHERE  `is_recycle` = 2 ORDER BY arc_click desc LIMIT 5 [ RunTime:0.001002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002149s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 ORDER BY a.sendtime desc LIMIT 8 [ RunTime:0.001806s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002520s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_arc_tag` [ RunTime:0.050542s ]
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 12 [ RunTime:0.000457s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001848s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 11 [ RunTime:0.000380s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010375s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 10 [ RunTime:0.000488s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001836s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 9 [ RunTime:0.000329s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001801s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 8 [ RunTime:0.000391s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001684s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 2 [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001698s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 1 [ RunTime:0.000401s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001746s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`arc_title`,`a`.`arc_id`,`a`.`arc_thumb` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 ORDER BY a.sendtime desc,a.arc_click desc LIMIT 5 [ RunTime:0.000411s ]
+
+---------------------------------------------------------------
+[ 2018-02-28T17:43:22+08:00 ] 127.0.0.1 127.0.0.1 POST /
+[ log ] master.test.dphub.sandai.net:80/ [运行时间：0.392894s][吞吐率：2.55req/s] [内存消耗：2,310.84kb] [文件加载：56]
+[ info ] [ LANG ] D:\www\myBlog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '256',
+  'content-type' => 'application/octet-stream',
+  'host' => 'master.test.dphub.sandai.net:80',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\www\myBlog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\myBlog\public/../application/index\view\index\index.html [ array (
+  0 => '_webSet',
+  1 => '_cateData',
+  2 => '_allCateData',
+  3 => '_tagData',
+  4 => '_linkData',
+  5 => '_newArticleData',
+  6 => 'headConf',
+  7 => 'hotArcList',
+  8 => 'articleData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001684s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_webset` [ RunTime:0.063268s ]
+[ sql ] [ SQL ] SELECT `webset_name`,`webset_value` FROM `blog_webset` [ RunTime:0.000263s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001649s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_cate` [ RunTime:0.047676s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` WHERE  `cate_pid` = 0 ORDER BY cate_sort desc [ RunTime:0.000304s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001554s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `blog_cate` ORDER BY cate_sort desc [ RunTime:0.000317s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001362s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_tag` [ RunTime:0.042915s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_tag` [ RunTime:0.000278s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001529s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_link` [ RunTime:0.055877s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_link` ORDER BY link_sort desc [ RunTime:0.000248s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005035s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_article` [ RunTime:0.049457s ]
+[ sql ] [ SQL ] SELECT `arc_id`,`arc_title`,`arc_click` FROM `blog_article` WHERE  `is_recycle` = 2 ORDER BY arc_click desc LIMIT 5 [ RunTime:0.000395s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002055s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 ORDER BY a.sendtime desc LIMIT 8 [ RunTime:0.000705s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001548s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_arc_tag` [ RunTime:0.039669s ]
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 12 [ RunTime:0.000385s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002983s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 11 [ RunTime:0.000635s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002633s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 10 [ RunTime:0.000524s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002434s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 9 [ RunTime:0.000415s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005146s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 8 [ RunTime:0.000856s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003836s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 2 [ RunTime:0.000606s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002739s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `t`.`tag_id`,`t`.`tag_name` FROM `blog_arc_tag` `at` INNER JOIN `blog_tag` `t` ON `at`.`tag_id`=`t`.`tag_id` WHERE  `at`.`arc_id` = 1 [ RunTime:0.000493s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002181s ] mysql:dbname=blog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `a`.`arc_title`,`a`.`arc_id`,`a`.`arc_thumb` FROM `blog_article` `a` INNER JOIN `blog_cate` `c` ON `a`.`cate_id`=`c`.`cate_id` WHERE  `a`.`is_recycle` = 2 ORDER BY a.sendtime desc,a.arc_click desc LIMIT 5 [ RunTime:0.000505s ]
+
+---------------------------------------------------------------

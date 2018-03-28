@@ -7,7 +7,7 @@ class Index extends Common
     public function index()
     {
         //首页head数据
-        $headConf = ['title'=>'yoho167技术博客--首页'];
+        $headConf = ['title'=>'yoho167 web技术博客--首页'];
         $this->assign('headConf',$headConf);
         //获取首页文章数据
         $articleData = db('article')->alias('a')
@@ -22,7 +22,17 @@ class Index extends Common
                 ->join('__TAG__ t', 'at.tag_id=t.tag_id')
                 ->where('at.arc_id', $v['arc_id'])->field('t.tag_id,t.tag_name')->select();
         }
-//        halt($articleData);
+
+        //轮播文章数据
+        $hotArcList = db('article')->alias('a')
+            //文章表与分类表关联，找出所属分类
+            ->join('__CATE__ c','a.cate_id=c.cate_id')
+            ->where('a.is_recycle',2)
+            ->order('a.sendtime desc,a.arc_click desc')->limit(5)
+            ->field('a.arc_title,a.arc_id,a.arc_thumb')
+            ->select();
+//        halt($hotArcList);
+        $this->assign('hotArcList',$hotArcList);
         $this->assign('articleData',$articleData);
         return $this->fetch();
     }

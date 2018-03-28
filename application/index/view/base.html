@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="__STATIC__/new_index/css/reset.css">
     <link rel="stylesheet" href="__STATIC__/new_index/css/style.css">
     <script src="__STATIC__/new_index/js/jquery-3.2.1.min.js"></script>
+    <script src="__STATIC__/new_index/js/markdown.js"></script>
 </head>
 <body>
 <!--顶部banner/start-->
@@ -38,7 +39,7 @@
                 <!--<li><a href="/blog/arc_list.html"><i class="iconfont icon-zan"></i>实用工具</a></li>-->
                 <!--<li><a href="/blog/arc_list.html"><i class="iconfont icon-guanyu"></i>关于YOHO167</a></li>-->
                 {foreach $_cateData as $vo}
-                <li><a {if condition="input('param.cate_id')==$vo['cate_id']"}class="active"{/if} href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}"><i class="iconfont icon-feiji"></i>{$vo.cate_name}</a></li>
+                <li><a {if condition="input('param.cate_id')==$vo['cate_id']"}class="active"{/if} href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}"><i class="iconfont {$vo.icon_class}"></i>{$vo.cate_name}</a></li>
                 <!--<li {if condition="input('param.cate_id')==$vo['cate_id']"}class="_active"{/if}><a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a></li>-->
                 {/foreach}
             </ul>
@@ -58,17 +59,29 @@
                     <!--<a href="#">登录</a>-->
                 <!--</p>-->
             <!--</div>-->
-            <div class="sidebar_item search_wrap" style="margin-top: 0;">
+            <!--<div class="sidebar_item search_wrap" style="margin-top: 0;">-->
+                <!--<div class="sidebar_title">-->
+                    <!--站内搜索-->
+                <!--</div>-->
+                <!--<div class="search_from">-->
+                    <!--<form>-->
+                        <!--<input type="text" id="kw" name="kw" value="111111" placeholder="请输入关键字" required>-->
+                        <!--<input type="submit" id="search_btn" value="搜索">-->
+                    <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--所有分类/start-->
+            <div class="sidebar_item cate_list_wrap" style="margin-top: 0">
                 <div class="sidebar_title">
-                    站内搜索
+                    分类列表
                 </div>
-                <div class="search_from">
-                    <form action="index.html" method="post">
-                        <input type="text" name="keyword" value="" placeholder="请输入关键字" required>
-                        <input type="submit" name="" value="搜索">
-                    </form>
-                </div>
+                <ul class="cate_list">
+                    {foreach name="_allCateData" item="vo"}
+                    <li><a href="{:url('index/lists/index',['cate_id'=>$vo.cate_id])}">{$vo.cate_name}</a></li>
+                    {/foreach}
+                </ul>
             </div>
+            <!--所有分类/end-->
             <!--热门标签/start-->
             <div class="sidebar_item hot_tag_wrap">
                 <div class="sidebar_title">
@@ -170,7 +183,7 @@
             setScrollPos(iScrollTop)
         })
         function setScrollPos(iTop){
-            if(iTop>=260){
+            if(iTop>=250){
                 oSiderLeft.css({position:'fixed'})
             }else{
                 oSiderLeft.css({position:'absolute'})
@@ -212,6 +225,10 @@
                 oBackTop.fadeOut(300);
             }
         });
+
+        // $('#search_btn').on('click',function(){
+        //     window.location.href = "/search.html?kw="+$("kw").val()
+        // })
     })
 </script>
 </html>

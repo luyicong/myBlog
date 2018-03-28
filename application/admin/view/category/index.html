@@ -21,6 +21,7 @@
                 <tr>
                     <th width="80">编号</th>
                     <th>栏目名称</th>
+                    <th>图标类名</th>
                     <th width="200">操作</th>
                 </tr>
                 </thead>
@@ -29,6 +30,11 @@
                 <tr>
                     <td>{$vo.cate_id}</td>
                     <td>{$vo._cate_name}</td>
+                    <td>
+                        {if condition="$vo.cate_pid eq 0"}
+                        <input style="width:100px" type="text" class="form-control" value="{$vo.icon_class}" onblur="upClassName(this,{$vo.cate_id})">
+                        {/if}
+                    </td>
                     <td>
                         <div class="btn-group">
                             <button data-toggle="dropdown" class="btn btn-primary btn-xs dropdown-toggle">操作 <span class="caret"></span></button>
@@ -61,5 +67,9 @@
         });
 //        window.location.href = '{:url('del')}?cate_id='+cate_id;
     }
+
+    // function upClassName(cate_id) {
+    //     alert(cate_id);
+    // }
 </script>
 {/block}

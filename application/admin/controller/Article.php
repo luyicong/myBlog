@@ -26,6 +26,7 @@ class Article extends Controller
     public function store(){
         //把psot请求数据交由模型处理
         if(request()->isPost()){
+//            halt(input('post.'));
             $res = $this->db->store(input('post.'));
 
             if($res['valid']){

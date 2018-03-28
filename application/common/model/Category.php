@@ -14,6 +14,7 @@ class Category extends Model
     public function getAllCate()
     {
         //生成树状的分类数组(参考hdphp3.0的数组增强)
+//        halt(db('cate')->select());
         return Arr::tree(db('cate')->select(), 'cate_name', $fieldPri = 'cate_id', $fieldPid = 'cate_pid');
     }
     //添加栏目

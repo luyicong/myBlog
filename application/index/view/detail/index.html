@@ -8,10 +8,13 @@
             <span>{$aticleData['arc_author']} 发表于：{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}</span>
             <span>分类：前端开发</span>
             <span>阅读({$aticleData['arc_click']})</span>
-            <span>评论(100)</span>
+            <!--<span>评论(100)</span>-->
         </p>
     </div>
-    <div class="detail_content">{$aticleData['arc_content']}</div>
+    <textarea class="textarea_text" hidden>{$aticleData['arc_content']}</textarea>
+    <div class="detail_content">
+        {$aticleData['arc_content']}
+    </div>
 </div>
 <!--文章详情内容/end-->
 <!--<article>-->

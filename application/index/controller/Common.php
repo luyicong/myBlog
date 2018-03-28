@@ -31,7 +31,7 @@ class Common extends Controller
     }
     //获取最新文章数据
     protected function loadNewArticleData(){
-        return db('article')->where('is_recycle',2)->order('sendtime desc')->limit(5)->field('arc_id,arc_title,sendtime')->select();
+        return db('article')->where('is_recycle',2)->order('arc_click desc')->limit(5)->field('arc_id,arc_title,arc_click')->select();
     }
     //获取友情链接数据
     protected function loadLinkData(){
@@ -51,6 +51,6 @@ class Common extends Controller
     }
     //获取顶级分类数据
     protected function loadCateData(){
-        return db('cate')->where('cate_pid',0)->order('cate_sort desc')->limit(5)->select();
+        return db('cate')->where('cate_pid',0)->order('cate_sort desc')->select();
     }
 }

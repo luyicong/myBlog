@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-12-18 17:43:26
+Date: 2018-01-04 17:43:27
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -52,16 +52,16 @@ INSERT INTO `blog_arc_tag` VALUES ('1', '3');
 INSERT INTO `blog_arc_tag` VALUES ('1', '2');
 INSERT INTO `blog_arc_tag` VALUES ('2', '2');
 INSERT INTO `blog_arc_tag` VALUES ('2', '1');
-INSERT INTO `blog_arc_tag` VALUES ('3', '2');
-INSERT INTO `blog_arc_tag` VALUES ('4', '1');
+INSERT INTO `blog_arc_tag` VALUES ('3', '5');
+INSERT INTO `blog_arc_tag` VALUES ('4', '2');
 INSERT INTO `blog_arc_tag` VALUES ('7', '1');
 INSERT INTO `blog_arc_tag` VALUES ('7', '2');
 INSERT INTO `blog_arc_tag` VALUES ('7', '13');
 INSERT INTO `blog_arc_tag` VALUES ('6', '4');
 INSERT INTO `blog_arc_tag` VALUES ('6', '3');
 INSERT INTO `blog_arc_tag` VALUES ('6', '13');
-INSERT INTO `blog_arc_tag` VALUES ('4', '2');
-INSERT INTO `blog_arc_tag` VALUES ('3', '5');
+INSERT INTO `blog_arc_tag` VALUES ('4', '1');
+INSERT INTO `blog_arc_tag` VALUES ('3', '2');
 
 -- ----------------------------
 -- Table structure for `blog_article`
@@ -89,10 +89,10 @@ CREATE TABLE `blog_article` (
 -- ----------------------------
 -- Records of blog_article
 -- ----------------------------
-INSERT INTO `blog_article` VALUES ('1', 'yoho167 web技术博客改版上线啦！', 'LYC123', '好消息！好消息！小聪个人博客改版上线啦！全新基于TP5框架开发！', '<p><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\">好消息！好消息！yoho167 web技术博客改版上线啦！全新基于TP5框架开发！</span><br style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"/><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"><br style=\"word-wrap: break-word;\"/>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 好了不多说了，大家自己去体验吧！www.congitlive.cn</span><br style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"/><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span><img src=\"http://bbs.houdunwang.com/static/image/smiley/tusiji/15.gif\" smilieid=\"189\" border=\"0\" alt=\"\" style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\" width:=\"\" height:=\"\" width=\"41\" height=\"46\"/><img src=\"http://bbs.houdunwang.com/static/image/smiley/tusiji/15.gif\" smilieid=\"189\" border=\"0\" alt=\"\" style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\" width:=\"\" height:=\"\" width=\"37\" height=\"45\"/></p>', '1491989851', '1513578892', '123', '2', 'http://www.tp5.com/uploads/20170412/efa83ed677e33be338d3a3de32b95166.jpg', '21', '2', '150');
-INSERT INTO `blog_article` VALUES ('2', 'yoho167博客改版上线啦！测试111111', 'LYC123', 'yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111', '<p>yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</p>', '1491989954', '1513578732', '4', '2', 'http://www.tp5.com/uploads/20170412/435b900f2e806d7b7f35d10818893e7d.jpg', '22', '2', '208');
-INSERT INTO `blog_article` VALUES ('3', '2017羽毛球赛', 'LYC123', '2016年9月14日，后盾网北京校区举办了秋季羽毛球赛，在校的数百名学员参加了本次活动。大家本着友谊第一，比赛第二的原则，都非常投入，也让自己在紧张的学习中得以放松', '<p><span style=\"color: rgb(65, 105, 225); font-family: \" microsoft=\"\" font-size:=\"\" background-color:=\"\">2016年9月14日，后盾网北京校区举办了秋季羽毛球赛，在校的数百名学员参加了本次活动。大家本着友谊第一，比赛第二的原则，都非常投入，也让自己在紧张的学习中得以放松545454</span></p>', '1491990302', '1501485400', '4', '2', 'http://www.tp5.com/uploads/20170412/b7f863c8be7ed44ec2f6c94191b906d1.jpg', '23', '2', '192');
-INSERT INTO `blog_article` VALUES ('4', '长城励志行', 'LYC123', '2016年9月15日， 值中秋佳节之际，后盾网北京校区组织在校学员和部分毕业学员举行长城游活动。后盾的大部分学员都来自外地，此次来长城，圆了不少同学的梦想，在后盾不仅能学到扎实的技术，还能和大家一起参加集体活动，大家都非常开心和兴奋。一起来回顾一下精彩集锦吧！', '<p><img src=\"http://blog.com:8080/uploads/20170412/b7f863c8be7ed44ec2f6c94191b906d1.jpg\"/></p><p><span style=\"color: rgb(0, 0, 255); font-family: \" microsoft=\"\" font-size:=\"\" background-color:=\"\">&nbsp;&nbsp;&nbsp;&nbsp;2016年9月15日， 值中秋佳节之际，后盾网北京校区组织在校学员和部分毕业学员举行长城游活动。后盾的大部分学员都来自外地，此次来长城，圆了不少同学的梦想，在后盾不仅能学到扎实的技术，还能和大家一起参加集体活动，大家都非常开心和兴奋。一起来回顾一下精彩集锦吧！</span></p><p><br/></p>', '1491990379', '1501485491', '8', '2', 'http://www.tp5.com/uploads/20170412/b7f863c8be7ed44ec2f6c94191b906d1.jpg', '19', '2', '199');
+INSERT INTO `blog_article` VALUES ('1', 'yoho167 web技术博客改版上线啦！', 'LYC123', '好消息！好消息！小聪个人博客改版上线啦！全新基于TP5框架开发！', '<p><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\">好消息！好消息！yoho167 web技术博客改版上线啦！全新基于TP5框架开发！</span><br style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"/><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"><br style=\"word-wrap: break-word;\"/>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 好了不多说了，大家自己去体验吧！www.congitlive.cn</span><br style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\"/><span style=\"font-size:16px;word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span><img src=\"http://bbs.houdunwang.com/static/image/smiley/tusiji/15.gif\" smilieid=\"189\" border=\"0\" alt=\"\" style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\" width:=\"\" height:=\"\" width=\"41\" height=\"46\"/><img src=\"http://bbs.houdunwang.com/static/image/smiley/tusiji/15.gif\" smilieid=\"189\" border=\"0\" alt=\"\" style=\"word-wrap: break-word; color: rgb(67, 74, 84); font-family: \" microsoft=\"\" white-space:=\"\" background-color:=\"\" width:=\"\" height:=\"\" width=\"37\" height=\"45\"/></p>', '1491989851', '1515052116', '124', '2', 'http://www.myblog.com/uploads/20180104/d49fa9b4a9ff5239b0fb2a704eef708e.jpg', '21', '2', '150');
+INSERT INTO `blog_article` VALUES ('2', 'yoho167博客改版上线啦！测试111111', 'LYC123', 'yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111', '<p><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><p style=\"text-align: left;\"><br/></p><pre class=\"brush:html;toolbar:false;\"><span style=\"font-size: 16px;\">function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(&#39;打印信息&#39;)<br/>}<br/></span></pre><p><br/></p><p><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><hr/><p><br/></p><p><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><hr/><p><br/></p><p><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><p><span style=\"font-size: 16px;\"><br/></span></p><p><span style=\"font-size: 16px;\"></span></p><p style=\"white-space: normal;\"><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><p style=\"white-space: normal;\"><br/></p><pre class=\"brush:html;toolbar:false;\"><span style=\"font-size: 16px;\">function&nbsp;()&nbsp;{<br/>&nbsp;&nbsp;&nbsp;&nbsp;console.log(&#39;打印信息&#39;)<br/>}<br/></span></pre><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><hr style=\"white-space: normal;\"/><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><hr style=\"white-space: normal;\"/><p style=\"white-space: normal;\"><br/></p><p style=\"white-space: normal;\"><span style=\"font-size: 16px;\">yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111yoho167博客改版上线啦！测试111111</span></p><p><span style=\"font-size: 16px;\"><br/></span><br/></p>', '1491989954', '1515052051', '34', '2', 'http://www.myblog.com/uploads/20180104/ccc6f8a4b174ab1af5b7effc662c6d7d.png', '32', '2', '208');
+INSERT INTO `blog_article` VALUES ('3', '2017羽毛球赛', 'LYC123', '2016年9月14日，后盾网北京校区举办了秋季羽毛球赛，在校的数百名学员参加了本次活动。大家本着友谊第一，比赛第二的原则，都非常投入，也让自己在紧张的学习中得以放松', '<p><span style=\"color: rgb(65, 105, 225); font-family: \" microsoft=\"\" font-size:=\"\" background-color:=\"\">2016年9月14日，后盾网北京校区举办了秋季羽毛球赛，在校的数百名学员参加了本次活动。大家本着友谊第一，比赛第二的原则，都非常投入，也让自己在紧张的学习中得以放松545454</span></p>', '1491990302', '1515052094', '6', '2', 'http://www.myblog.com/uploads/20180104/e4c3239aa8630d968ea2f2a57245a1b8.jpg', '23', '2', '192');
+INSERT INTO `blog_article` VALUES ('4', '长城励志行', 'LYC123', '2016年9月15日， 值中秋佳节之际，后盾网北京校区组织在校学员和部分毕业学员举行长城游活动。后盾的大部分学员都来自外地，此次来长城，圆了不少同学的梦想，在后盾不仅能学到扎实的技术，还能和大家一起参加集体活动，大家都非常开心和兴奋。一起来回顾一下精彩集锦吧！', '<p><img src=\"http://blog.com:8080/uploads/20170412/b7f863c8be7ed44ec2f6c94191b906d1.jpg\"/></p><p><span style=\"color: rgb(0, 0, 255); font-family: \" microsoft=\"\" font-size:=\"\" background-color:=\"\">&nbsp;&nbsp;&nbsp;&nbsp;2016年9月15日， 值中秋佳节之际，后盾网北京校区组织在校学员和部分毕业学员举行长城游活动。后盾的大部分学员都来自外地，此次来长城，圆了不少同学的梦想，在后盾不仅能学到扎实的技术，还能和大家一起参加集体活动，大家都非常开心和兴奋。一起来回顾一下精彩集锦吧！</span></p><p><br/></p>', '1491990379', '1515052017', '11', '2', 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png', '32', '2', '199');
 INSERT INTO `blog_article` VALUES ('6', '1112225233333', 'admin', '11111222222', '<p>111112222223333333</p>', '0', '1497458549', '0', '1', 'http://www.myblog.com/uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png', '21', '2', '110');
 
 -- ----------------------------
@@ -109,13 +109,31 @@ CREATE TABLE `blog_attachment` (
   `size` mediumint(9) NOT NULL COMMENT '文件大小',
   PRIMARY KEY (`id`),
   KEY `extension` (`extension`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='附件';
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC COMMENT='附件';
 
 -- ----------------------------
 -- Records of blog_attachment
 -- ----------------------------
 INSERT INTO `blog_attachment` VALUES ('16', 'D6H1(1R4`VM_1{E4SZ{WMT4.png', 'ff6ce953c833f2ccaaa926c58d2b1b77.png', 'uploads/20170611/ff6ce953c833f2ccaaa926c58d2b1b77.png', 'png', '1497118350', '143970');
 INSERT INTO `blog_attachment` VALUES ('17', 'D6H1(1R4`VM_1{E4SZ{WMT4.png', '674995ec2ff4d774447bdf4fdbe72e72.png', 'uploads/20170612/674995ec2ff4d774447bdf4fdbe72e72.png', 'png', '1497279529', '143970');
+INSERT INTO `blog_attachment` VALUES ('18', '[UHYB$O1J]P5RU7V6ELGH35.png', 'ccc6f8a4b174ab1af5b7effc662c6d7d.png', 'uploads/20180104/ccc6f8a4b174ab1af5b7effc662c6d7d.png', 'png', '1515052048', '291207');
+INSERT INTO `blog_attachment` VALUES ('19', 'timg.jpg', 'e4c3239aa8630d968ea2f2a57245a1b8.jpg', 'uploads/20180104/e4c3239aa8630d968ea2f2a57245a1b8.jpg', 'jpg', '1515052091', '9885');
+INSERT INTO `blog_attachment` VALUES ('20', 'ff46474bd73acfd4295da9213b3d3e1b.jpg', 'd49fa9b4a9ff5239b0fb2a704eef708e.jpg', 'uploads/20180104/d49fa9b4a9ff5239b0fb2a704eef708e.jpg', 'jpg', '1515052113', '28433');
+
+-- ----------------------------
+-- Table structure for `blog_carousel`
+-- ----------------------------
+DROP TABLE IF EXISTS `blog_carousel`;
+CREATE TABLE `blog_carousel` (
+  `id` int(255) NOT NULL AUTO_INCREMENT COMMENT 'banner广告id',
+  `title` char(200) NOT NULL COMMENT 'banner广告标题',
+  `img_url` varchar(1000) NOT NULL COMMENT 'banner广告图片地址',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of blog_carousel
+-- ----------------------------
 
 -- ----------------------------
 -- Table structure for `blog_cate`
@@ -134,17 +152,17 @@ CREATE TABLE `blog_cate` (
 -- ----------------------------
 INSERT INTO `blog_cate` VALUES ('22', 'yii2.0学习', '15', '59');
 INSERT INTO `blog_cate` VALUES ('21', 'reac.js学习', '14', '58');
-INSERT INTO `blog_cate` VALUES ('20', 'laravel5.4学习', '15', '57');
-INSERT INTO `blog_cate` VALUES ('19', 'thinkphp5.0学习', '15', '56');
-INSERT INTO `blog_cate` VALUES ('18', 'angular.js学习', '14', '55');
+INSERT INTO `blog_cate` VALUES ('20', 'laravel5.4', '15', '57');
+INSERT INTO `blog_cate` VALUES ('19', 'thinkphp5.0', '15', '56');
+INSERT INTO `blog_cate` VALUES ('18', 'angular.js', '14', '55');
 INSERT INTO `blog_cate` VALUES ('17', 'vue.js学习', '14', '54');
-INSERT INTO `blog_cate` VALUES ('32', 'java开发', '0', '109');
-INSERT INTO `blog_cate` VALUES ('14', '前端开发1', '0', '51');
-INSERT INTO `blog_cate` VALUES ('15', 'php开发', '0', '50');
+INSERT INTO `blog_cate` VALUES ('32', '前端开发', '0', '109');
+INSERT INTO `blog_cate` VALUES ('14', '移动开发', '0', '51');
+INSERT INTO `blog_cate` VALUES ('15', '程序人生', '0', '50');
 INSERT INTO `blog_cate` VALUES ('23', 'react native', '21', '60');
 INSERT INTO `blog_cate` VALUES ('25', 'es6语法学习', '24', '62');
 INSERT INTO `blog_cate` VALUES ('27', 'es6语法学习', '26', '63');
-INSERT INTO `blog_cate` VALUES ('31', '.NET开发', '0', '106');
+INSERT INTO `blog_cate` VALUES ('31', '实用工具', '0', '106');
 
 -- ----------------------------
 -- Table structure for `blog_comment`
@@ -205,11 +223,11 @@ CREATE TABLE `blog_tag` (
 -- ----------------------------
 -- Records of blog_tag
 -- ----------------------------
-INSERT INTO `blog_tag` VALUES ('1', '框架');
-INSERT INTO `blog_tag` VALUES ('2', '学习');
-INSERT INTO `blog_tag` VALUES ('3', '视频');
-INSERT INTO `blog_tag` VALUES ('4', 'php');
-INSERT INTO `blog_tag` VALUES ('5', 'html');
+INSERT INTO `blog_tag` VALUES ('1', 'javascript');
+INSERT INTO `blog_tag` VALUES ('2', 'vue.js');
+INSERT INTO `blog_tag` VALUES ('3', 'react.js');
+INSERT INTO `blog_tag` VALUES ('4', 'react native');
+INSERT INTO `blog_tag` VALUES ('5', 'angular.js');
 
 -- ----------------------------
 -- Table structure for `blog_webset`
@@ -226,9 +244,9 @@ CREATE TABLE `blog_webset` (
 -- ----------------------------
 -- Records of blog_webset
 -- ----------------------------
-INSERT INTO `blog_webset` VALUES ('1', 'title', 'yoho167技术博客', '网站名称');
+INSERT INTO `blog_webset` VALUES ('1', 'title', 'yoho167博客，专注web技术交流、分享博客，每天进步一点点。', '网站名称');
 INSERT INTO `blog_webset` VALUES ('2', 'email', '980469887@qq.com', '站长邮箱');
 INSERT INTO `blog_webset` VALUES ('3', 'copyright', 'Copyright @ 2017 yoho167技术博客', '版权信息');
-INSERT INTO `blog_webset` VALUES ('4', 'keywords', '前端技术、技术交流、交流学习', '网站关键字');
-INSERT INTO `blog_webset` VALUES ('5', 'description', 'yoho167技术博客', '网站描述');
+INSERT INTO `blog_webset` VALUES ('4', 'keywords', 'web技术、前端开发、移动开发、移动web、前端技术、技术交流、交流学习', '网站关键字');
+INSERT INTO `blog_webset` VALUES ('5', 'description', 'yoho167博客，专注web技术交流、分享博客，每天进步一点点。', '网站描述');
 INSERT INTO `blog_webset` VALUES ('6', 'aboutblog', '关于yoho167技术博客，yoho167技术博客创建于2015年7月6日，由LYC123创建，属于技术交流、学习、分享web技术的博客。', '关于我');

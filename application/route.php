@@ -13,10 +13,6 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
     '[cid]'     => [
         ':cate_id'   => ['index/lists/index', ['method' => 'get'], ['id' => '\d+']]
     ],
@@ -25,5 +21,8 @@ return [
     ],
     '[detail]'     => [
         ':arc_id'   => ['index/detail/index', ['method' => 'get'], ['id' => '\d+']]
+    ],
+    '[search]'     => [
+        '/search:kw'   => ['index/search/index', ['method' => 'get'], ['kw' => '\d+']]
     ]
 ];

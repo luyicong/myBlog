@@ -28,7 +28,7 @@ class Lists extends Common
                 ->join('__CATE__ c','a.cate_id=c.cate_id')
                 ->where('a.is_recycle',2)
                 ->whereIn('a.cate_id',$cids)
-                ->field('a.arc_id,c.cate_id,c.cate_name,a.arc_title,a.arc_author,a.arc_digest,a.sendtime,a.arc_thumb')->select();
+                ->field('a.arc_id,c.cate_id,c.cate_name,a.arc_title,a.arc_author,a.arc_digest,a.sendtime,a.arc_thumb,a.arc_click')->select();
         }
         if($tag_id){
             $listHead = [

@@ -6,771 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0809b497-0969-414c-a75d-906be42ae2f5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Article.php" afterPath="$PROJECT_DIR$/application/admin/controller/Article.php" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/article/edit.html" afterPath="$PROJECT_DIR$/application/admin/view/article/edit.html" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/article/index.html" afterPath="$PROJECT_DIR$/application/admin/view/article/index.html" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/article/store.html" afterPath="$PROJECT_DIR$/application/admin/view/article/store.html" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/base.html" afterPath="$PROJECT_DIR$/application/admin/view/base.html" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/category/index.html" afterPath="$PROJECT_DIR$/application/admin/view/category/index.html" />
-      <change beforePath="$PROJECT_DIR$/application/common/model/Article.php" afterPath="$PROJECT_DIR$/application/common/model/Article.php" />
-      <change beforePath="$PROJECT_DIR$/application/common/model/Category.php" afterPath="$PROJECT_DIR$/application/common/model/Category.php" />
-      <change beforePath="$PROJECT_DIR$/application/database.php" afterPath="$PROJECT_DIR$/application/database.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Common.php" afterPath="$PROJECT_DIR$/application/index/controller/Common.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Lists.php" afterPath="$PROJECT_DIR$/application/index/controller/Lists.php" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/base.html" afterPath="$PROJECT_DIR$/application/index/view/base.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/detail/index.html" afterPath="$PROJECT_DIR$/application/index/view/detail/index.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/lists/index.html" afterPath="$PROJECT_DIR$/application/index/view/lists/index.html" />
-      <change beforePath="$PROJECT_DIR$/application/index/views/base.html" afterPath="$PROJECT_DIR$/application/index/views/base.html" />
-      <change beforePath="$PROJECT_DIR$/application/route.php" afterPath="$PROJECT_DIR$/application/route.php" />
-      <change beforePath="$PROJECT_DIR$/blog.sql" afterPath="$PROJECT_DIR$/blog.sql" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/.npmignore" afterPath="$PROJECT_DIR$/public/static/node_modules/hdjs/.npmignore" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/README.md" afterPath="$PROJECT_DIR$/public/static/node_modules/hdjs/README.md" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/app/address.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/app/fileUploader.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/app/util.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/clockpicker/bootstrap-clockpicker.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/clockpicker/bootstrap-clockpicker.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.logo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.logo.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.preview.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/css/editormd.preview.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/editormd.amd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/editormd.amd.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/editormd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/editormd.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/editormd-logo.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/editormd-logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/editormd-logo.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/editormd-logo.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/loading.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/loading@2x.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/loading@3x.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-favicon-16x16.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-favicon-24x24.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-favicon-32x32.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-favicon-48x48.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-favicon-64x64.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-114x114.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-120x120.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-144x144.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-16x16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-180x180.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-240x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-24x24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-320x320.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-32x32.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-48x48.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-57x57.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-64x64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-72x72.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/editormd-logo-96x96.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/images/logos/vi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/languages/en.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/languages/zh-tw.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/comment/comment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/comment/continuecomment.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/dialog/dialog.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/dialog/dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/display/fullscreen.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/display/fullscreen.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/display/panel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/display/placeholder.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/display/rulers.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/closebrackets.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/closetag.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/continuelist.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/matchbrackets.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/matchtags.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/edit/trailingspace.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/brace-fold.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/comment-fold.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/foldcode.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/foldgutter.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/foldgutter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/indent-fold.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/markdown-fold.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/fold/xml-fold.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/anyword-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/css-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/html-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/javascript-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/show-hint.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/show-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/sql-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/hint/xml-hint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/coffeescript-lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/css-lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/javascript-lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/json-lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/lint.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/lint/yaml-lint.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/merge/merge.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/merge/merge.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/mode/loadmode.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/mode/multiplex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/mode/multiplex_test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/mode/overlay.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/mode/simple.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/runmode/colorize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/runmode/runmode-standalone.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/runmode/runmode.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/runmode/runmode.node.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/scroll/annotatescrollbar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/scroll/scrollpastend.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/scroll/simplescrollbars.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/scroll/simplescrollbars.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/search/match-highlighter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/search/matchesonscrollbar.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/search/matchesonscrollbar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/search/search.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/search/searchcursor.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/selection/active-line.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/selection/mark-selection.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/selection/selection-pointer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/tern/tern.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/tern/tern.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/tern/worker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addon/wrap/hardwrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/addons.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/codemirror.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/codemirror.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/lib/codemirror.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/lib/codemirror.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/apl/apl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/apl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/asterisk/asterisk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/asterisk/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/clike/clike.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/clike/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/clike/scala.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/clojure/clojure.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/clojure/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/cobol/cobol.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/cobol/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/coffeescript/coffeescript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/coffeescript/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/commonlisp/commonlisp.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/commonlisp/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/css.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/less.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/less_test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/scss.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/scss_test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/css/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/cypher/cypher.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/cypher/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/d/d.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/d/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dart/dart.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dart/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/diff/diff.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/diff/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/django/django.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/django/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dockerfile/dockerfile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dockerfile/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dtd/dtd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dtd/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dylan/dylan.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/dylan/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ebnf/ebnf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ebnf/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ecl/ecl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ecl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/eiffel/eiffel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/eiffel/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/erlang/erlang.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/erlang/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/forth/forth.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/forth/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/fortran/fortran.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/fortran/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gas/gas.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gas/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gfm/gfm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gfm/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gfm/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gherkin/gherkin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/gherkin/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/go/go.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/go/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/groovy/groovy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/groovy/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haml/haml.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haml/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haml/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haskell/haskell.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haskell/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haxe/haxe.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/haxe/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/htmlembedded/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/htmlmixed/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/http/http.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/http/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/idl/idl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/idl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/jade/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/jade/jade.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/javascript/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/javascript/javascript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/javascript/json-ld.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/javascript/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/javascript/typescript.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/jinja2/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/jinja2/jinja2.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/julia/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/julia/julia.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/kotlin/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/kotlin/kotlin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/livescript/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/livescript/livescript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/lua/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/lua/lua.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/markdown/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/markdown/markdown.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/markdown/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/meta.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/mirc/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/mirc/mirc.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/mllike/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/mllike/mllike.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/modelica/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/modelica/modelica.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/nginx/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/nginx/nginx.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ntriples/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ntriples/ntriples.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/octave/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/octave/octave.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pascal/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pascal/pascal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pegjs/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pegjs/pegjs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/perl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/perl/perl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/php/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/php/php.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/php/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pig/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/pig/pig.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/properties/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/properties/properties.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/puppet/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/puppet/puppet.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/python/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/python/python.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/q/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/q/q.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/r/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/r/r.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rpm/changes/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rpm/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rpm/rpm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rst/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rst/rst.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ruby/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ruby/ruby.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/ruby/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rust/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/rust/rust.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sass/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sass/sass.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/scheme/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/scheme/scheme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/shell/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/shell/shell.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/shell/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sieve/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sieve/sieve.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/slim/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/slim/slim.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/slim/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smalltalk/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smalltalk/smalltalk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smarty/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smarty/smarty.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smartymixed/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/smartymixed/smartymixed.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/solr/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/solr/solr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/soy/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/soy/soy.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sparql/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sparql/sparql.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/spreadsheet/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/spreadsheet/spreadsheet.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sql/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/sql/sql.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/stex/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/stex/stex.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/stex/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/stylus/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/stylus/stylus.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tcl/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tcl/tcl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/textile/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/textile/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/textile/textile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiddlywiki/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiki/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiki/tiki.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tiki/tiki.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/toml/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/toml/toml.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tornado/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/tornado/tornado.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/turtle/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/turtle/turtle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/vb/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/vb/vb.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/vbscript/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/vbscript/vbscript.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/velocity/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/velocity/velocity.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/verilog/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/verilog/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/verilog/verilog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xml/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xml/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xml/xml.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xquery/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xquery/test.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/xquery/xquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/yaml/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/yaml/yaml.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/z80/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/mode/z80/z80.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/modes.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/3024-day.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/3024-night.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/ambiance-mobile.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/ambiance.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/base16-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/base16-light.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/blackboard.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/cobalt.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/colorforth.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/eclipse.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/elegant.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/erlang-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/lesser-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/mbo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/mdn-like.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/midnight.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/monokai.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/neat.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/neo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/night.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/paraiso-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/paraiso-light.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/pastel-on-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/rubyblue.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/solarized.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/the-matrix.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/tomorrow-night-bright.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/tomorrow-night-eighties.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/twilight.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/vibrant-ink.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/xq-dark.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/xq-light.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/codemirror/theme/zenburn.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/flowchart.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/jquery.flowchart.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/marked.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/prettify.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/raphael.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/sequence-diagram.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/lib/underscore.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/code-block-dialog/code-block-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/emoji-dialog/emoji-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/emoji-dialog/emoji.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/goto-line-dialog/goto-line-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/help-dialog/help-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/help-dialog/help.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/html-entities-dialog/html-entities-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/html-entities-dialog/html-entities.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/image-dialog/image-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/link-dialog/link-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/plugin-template.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/preformatted-text-dialog/preformatted-text-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/reference-link-dialog/reference-link-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/table-dialog/table-dialog.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/plugins/test-plugin/test-plugin.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/editormd/src/editormd.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/emotion/emotion.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/oss.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/Moxie.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/Moxie.xap" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/moxie.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/moxie.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/plupload.dev.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/plupload.full.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/js/plupload.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/license.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/oss/plupload-2.1.2/readme.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/anchor/anchor.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/background/background.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/background/background.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/background/background.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/background/images/bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/background/images/success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/chart.config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/charts.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/charts.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/charts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/charts/images/charts5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/emotion.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/emotion.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/emotion.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/0.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/bface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/cface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/fface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/jxface2.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/tface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/wface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/emotion/images/yface.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/gmap/gmap.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/help/help.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/help/help.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/help/help.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/image.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/image.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/image.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/alignicon.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/icons.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/icons.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/progress.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/success.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/image/images/success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/insertframe/insertframe.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/internal.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/link/link.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/map/map.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/map/show.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/music/music.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/music/music.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/music/music.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/preview/preview.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/addimg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/brush.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/delimg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/delimgH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/empty.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/emptyH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/eraser.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/redo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/redoH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/scale.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/scaleH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/size.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/undo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/images/undoH.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/scrawl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/scrawl.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/scrawl/scrawl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/searchreplace/searchreplace.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/searchreplace/searchreplace.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/snapscreen/snapscreen.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/spechars/spechars.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/spechars/spechars.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/dragicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/edittable.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/edittable.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/edittable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/edittd.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/table/edittip.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/bg.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/pre0.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/pre1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/pre2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/pre3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/images/pre4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/template.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/template.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/template/template.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/center_focus.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/file-icons.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/file-icons.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/icons.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/icons.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/left_focus.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/none_focus.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/progress.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/right_focus.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/success.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/images/success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/video.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/video.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/video/video.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/webapp/webapp.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/wordimage/imageUploader.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/wordimage/tangram.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/wordimage/wordimage.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/dialogs/wordimage/wordimage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/en.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/addimage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/alldeletebtnhoverskin.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/alldeletebtnupskin.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/background.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/button.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/copy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/deletedisable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/deleteenable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/listbackground.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/localimage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/music.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/rotateleftdisable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/rotateleftenable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/rotaterightdisable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/rotaterightenable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/en/images/upload.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/zh-cn/images/copy.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/zh-cn/images/localimage.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/zh-cn/images/music.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/zh-cn/images/upload.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/lang/zh-cn/zh-cn.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/Uploader.class.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/action_crawler.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/action_list.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/action_upload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/config.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/php/controller.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/css/ueditor.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/css/ueditor.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/dialogbase.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/anchor.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/arrow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/arrow_down.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/arrow_up.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/button-bg.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/cancelbutton.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/charts.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/cursor_h.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/cursor_h.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/cursor_v.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/cursor_v.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/dialog-title-bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/filescan.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/highlighted.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/icons-all.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/icons.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/icons.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/loaderror.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/loading.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/lock.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/neweditor-tab-bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/pagebreak.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/scale.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/sortable.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/spacer.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/sparator_v.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/table-cell-align.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/tangram-colorpicker.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/toolbar_bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/unhighlighted.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/upload.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/videologo.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/word.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/default/images/wordpaste.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/themes/iframe.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/SyntaxHighlighter/shCore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/codemirror/codemirror.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/codemirror/codemirror.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/mootools-adapter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/prototype-adapter.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/standalone-framework.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/highcharts-more.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/highcharts-more.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/highcharts.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/highcharts.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/annotations.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/annotations.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/canvas-tools.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/canvas-tools.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/data.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/data.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/drilldown.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/drilldown.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/exporting.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/exporting.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/funnel.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/funnel.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/heatmap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/heatmap.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/map.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/map.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/no-data-to-display.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/themes/dark-blue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/themes/dark-green.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/themes/gray.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/themes/grid.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/highcharts/themes/skies.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/jquery-1.10.2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/font/vjs.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/font/vjs.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/font/vjs.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/font/vjs.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/video-js.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/video-js.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/video.dev.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/video-js/video.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/Uploader.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.custom.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.flashonly.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.html5only.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/zeroclipboard/ZeroClipboard.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/ueditor.all.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/ueditor.config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/ueditor.parse.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/ueditor/ueditor.parse.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/Uploader.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/bg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/expressInstall.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/icons.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/icons.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/image.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/jquery.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/progress.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/progress.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/style.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/success.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/upload.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/webuploader.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/webuploader/webuploader.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/component/zclip/ZeroClipboard.swf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/config.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/app.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/app.less" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/bootstrap-switch.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/bootstrapValidator.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/daterangepicker.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/emotion.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/font-awesome.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/font-awesome.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-icons_228ef1_256x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/jquery-ui.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/select2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/spectrum.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/css/swiper-3.3.1.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/captcha.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/images/loading.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/images/nopic.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/Chart.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/HDCMS - 开源免费内容管理系统 - Powered by HDCMS.COM.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/Sortable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/aliyun-oss-sdk-4.4.4.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/angular-drag-and-drop-lists.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/angular-sanitize.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/angular.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/async.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/axios.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrap-contextmenu.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrap-datetimepicker.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrap-filestyle.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrap-switch.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/bootstrapValidator.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/css.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/daterangepicker.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/domReady.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery-ui.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.caret.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.jplayer.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.mobile-1.4.5.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.qrcode.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/jquery.zclip.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/js.cookie.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/json2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/lodash.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/md5.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/moment-with-locales.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/ng-sortable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/require.css.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/select2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/spectrum.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/swiper-3.3.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/touch.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/underscore-min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/vue.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/vue.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/js/zh-CN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/package.json" afterPath="$PROJECT_DIR$/public/static/node_modules/hdjs/package.json" />
-      <change beforePath="$PROJECT_DIR$/public/static/node_modules/hdjs/require.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201801/04.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/20a013b12be26054f197395a2d22aa29.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/5b34315be67d95f61a83bc888fc01cee.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/89f910ac0b445e899e3365c25f604570.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/dd7cb47702a6e27ed7f04bd4ac314dc2.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/e95e3b2ede1e34cd44856bbf8d579ad6.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/runtime/temp/a6b6ab955a5cc3acf3d8bdf3e2041f03.php" afterPath="$PROJECT_DIR$/runtime/temp/a6b6ab955a5cc3acf3d8bdf3e2041f03.php" />
     </list>
     <ignored path="myblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -793,83 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/views/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="88" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/index/view/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/index/view/detail/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="108" column="28" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="108" selection-end-column="28" />
+            <state relative-caret-position="54">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="122" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -877,12 +43,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="store.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/admin/view/article/store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="107" column="66" lean-forward="false" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="66" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+              <folding>
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -902,11 +70,11 @@
       <find>cate_name</find>
       <find>.page_content_wrap .content</find>
       <find>list_title</find>
-      <find>detail_content</find>
       <find>title_text</find>
       <find>hot</find>
       <find>page_content_wrap</find>
       <find>cate_list</find>
+      <find>detail_content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -953,19 +121,19 @@
         <option value="$PROJECT_DIR$/application/config.php" />
         <option value="$PROJECT_DIR$/application/route.php" />
         <option value="$PROJECT_DIR$/public/static/new_index/css/reset.css" />
-        <option value="$PROJECT_DIR$/public/static/new_index/css/style.css" />
         <option value="$PROJECT_DIR$/application/admin/controller/Common.php" />
         <option value="$PROJECT_DIR$/application/database.php" />
         <option value="$PROJECT_DIR$/application/admin/view/article/index.html" />
         <option value="$PROJECT_DIR$/application/admin/controller/Article.php" />
-        <option value="$PROJECT_DIR$/application/admin/view/article/store.html" />
         <option value="$PROJECT_DIR$/application/common/model/Article.php" />
         <option value="$PROJECT_DIR$/application/index/views/base.html" />
         <option value="$PROJECT_DIR$/application/index/view/base.html" />
         <option value="$PROJECT_DIR$/public/static/new_index/js/markdown.js" />
         <option value="$PROJECT_DIR$/application/admin/view/base.html" />
-        <option value="$PROJECT_DIR$/application/admin/view/article/edit.html" />
         <option value="$PROJECT_DIR$/application/index/view/detail/index.html" />
+        <option value="$PROJECT_DIR$/public/static/new_index/css/style.css" />
+        <option value="$PROJECT_DIR$/application/admin/view/article/edit.html" />
+        <option value="$PROJECT_DIR$/application/admin/view/article/store.html" />
       </list>
     </option>
   </component>
@@ -1043,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1111,51 +278,11 @@
               <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="detail" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="new_index" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="myBlog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myBlog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="static" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="new_index" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1165,7 +292,7 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../talent" />
+    <property name="last_opened_file_path" value="G:/www/cors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1318,12 +445,13 @@
       <workItem from="1520210695854" duration="2103000" />
       <workItem from="1520302518512" duration="612000" />
       <workItem from="1520315633842" duration="610000" />
-      <workItem from="1522217903295" duration="10493000" />
+      <workItem from="1522217903295" duration="11094000" />
+      <workItem from="1522292844222" duration="2003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246625000" />
+    <option name="totallyTimeSpent" value="249229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1334,12 +462,12 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21019109" sideWeight="0.51666665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21019109" sideWeight="0.48333332" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1464,13 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="55" lean-forward="false" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/new_index/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13338">
-          <caret line="494" column="11" lean-forward="false" selection-start-line="494" selection-start-column="11" selection-end-line="494" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1625,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1633,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="41" column="84" lean-forward="false" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1641,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1649,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1657,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-116">
           <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1665,7 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" column="66" lean-forward="false" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1673,6 +788,60 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="45" column="104" lean-forward="false" selection-start-line="45" selection-start-column="89" selection-end-line="45" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/new_index/js/markdown.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="1813" column="0" lean-forward="true" selection-start-line="1813" selection-start-column="0" selection-end-line="1813" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/static/new_index/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="598" column="20" lean-forward="true" selection-start-line="598" selection-start-column="20" selection-end-line="598" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/detail/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/view/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/index/views/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="88" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/view/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1687,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="0">
           <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="35" />
           <folding>
             <element signature="e#40#70#0#PHP" expanded="true" />
@@ -1695,71 +864,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/model/Article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/views/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="88" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/new_index/js/markdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="1813" column="0" lean-forward="true" selection-start-line="1813" selection-start-column="0" selection-end-line="1813" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/article/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="107" column="66" lean-forward="false" selection-start-line="107" selection-start-column="55" selection-end-line="107" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/article/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="108" column="28" lean-forward="true" selection-start-line="97" selection-start-column="12" selection-end-line="108" selection-end-column="28" />
+        <state relative-caret-position="54">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="122" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/detail/index.html">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/article/store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#7;n#div#1;n#div#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"D:\www\myBlog\public/../application/admin\view\article\edit.html";i:1522228931;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522227097;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:64:"D:\www\myBlog\public/../application/admin\view\article\edit.html";i:1522306092;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522227097;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -301,16 +301,6 @@
                     <div id="editormd"><?php echo $oldData['arc_content']; ?></div>
                     <textarea hidden id="text1" name="arc_content" style="width:100%; height:200px;"><?php echo $oldData['arc_content']; ?></textarea>
                     <script>
-                        // require(['hdjs'], function (hdjs) {
-                        //     hdjs.markdown("editormd", {
-                        //         width: '100%',
-                        //         heigth: 300,
-                        //         callback:function(editormd){
-                        //             //编辑器对象
-                        //             console.log(editormd);
-                        //         }
-                        //     });
-                        // });
                         var E = window.wangEditor
                         var editor = new E('#editormd')
 

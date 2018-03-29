@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\www\myBlog\public/../application/admin\view\entry\index.html";i:1497935018;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522227097;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:60:"D:\www\myBlog\public/../application/admin\view\tag\edit.html";i:1497935018;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522220012;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,8 +8,6 @@
     <link href="__STATIC__/admin/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="__STATIC__/admin/css/site.css" rel="stylesheet">
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="__STATIC__/node_modules/hdjs/dist/hdjs.css">
-    <link href="__STATIC__/lib/wangEditor.min.css">
     <script src="__STATIC__/admin/js/jquery.min.js"></script>
     <script src="__STATIC__/admin/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
     <script src="__STATIC__/layer/layer.js"></script>
@@ -25,27 +23,19 @@
         }
     </script>
     <script>
-        // //模块配置项
-        window.hdjs={};
-        //组件目录必须绝对路径(在网站根目录时不用设置)
-        window.hdjs.base = '__STATIC__/node_modules/hdjs';
-        //上传文件后台地址
-        window.hdjs.uploader = "<?php echo url('system/component/uploader'); ?>";
-        //获取文件列表的后台地址
-        window.hdjs.filesLists = "<?php echo url('system/component/filesLists'); ?>?";
-
-        $(function(){
-            $('.dropdown-toggle').click(function(){
-                $(this).siblings('.dropdown-menu').css('display','block')
-            })
-            $(document).click(function(){
-                $('.dropdown-menu').css('display','none')
-            })
-        })
+        //模块配置项
+        var hdjs = {
+            //框架目录
+            'base': '__STATIC__/node_modules/hdjs/dist',
+            //上传文件后台地址
+            'uploader': "<?php echo url('system/component/uploader'); ?>",
+            //获取文件列表的后台地址
+            'filesLists':"<?php echo url('system/component/filesLists'); ?>?",
+        };
     </script>
     <!--<script src="__STATIC__/node_modules/hdjs/app/util.js"></script>-->
     <!--<script src="__STATIC__/node_modules/hdjs/require.js"></script>-->
-    <script src="__STATIC__/lib/wangEditor.min.js"></script>
+    <!--<script src="__STATIC__/node_modules/hdjs/config.js"></script>-->
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/require.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/config.js"></script>
     <style>
@@ -194,38 +184,36 @@
         <!--右侧主体区域部分 start-->
         <div class="col-xs-12 col-sm-9 col-lg-10">
             
-    <table class="table table-hover">
-        <tbody>
-        <tr>
-            <th class="active" colspan="10">温馨提示</th>
-        </tr>
-        <tr>
-            <td colspan="10">
-                LYC个人博客：<a href="http://www.congitlive.cn" target="_blank">www.congitlive.cn</a>
-                github地址：<a href="https://github.com/luyicong" target="_blank">https://github.com/luyicong</a>
-            </td>
-        </tr>
-        <tr>
-            <th class="active" colspan="10">系统信息</th>
-        </tr>
-        <tr>
-            <td>核心框架</td>
-            <td colspan="5">ThinkPHP5.05完整版</td>
-        </tr>
-        <tr>
-            <td>版本号</td>
-            <td colspan="5">1.0</td>
-        </tr>
-        <tr>
-            <td>开发者</td>
-            <td colspan="5">LYC</td>
-        </tr>
-        <tr>
-            <td>邮箱</td>
-            <td colspan="5">980469887@qq.com</td>
-        </tr>
-        </tbody>
-    </table>
+<ol class="breadcrumb" style="background-color: #f9f9f9;padding:8px 0;margin-bottom:10px;">
+    <li>
+        <a href=""><i class="fa fa-cogs"></i>
+            标签管理</a>
+    </li>
+    <li class="active">
+        <a href="">标签编辑</a>
+    </li>
+</ol>
+<ul class="nav nav-tabs" role="tablist">
+    <li><a href="<?php echo url('admin/Tag/index'); ?>">标签管理</a></li>
+    <li class="active"><a href="">标签编辑</a></li>
+</ul>
+<form class="form-horizontal" id="form"  action="" method="post">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">标签管理</h3>
+        </div>
+        <div class="panel-body">
+
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">标签名称</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" name="tag_name" value="<?php echo $oldData['tag_name']; ?>">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" type="submit">确定</button>
+</form>
 
         </div>
     </div>

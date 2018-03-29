@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\www\myBlog\public/../application/admin\view\article\store.html";i:1522222116;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522221251;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\www\myBlog\public/../application/admin\view\article\store.html";i:1522306122;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1522227097;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +9,7 @@
     <link href="__STATIC__/admin/css/site.css" rel="stylesheet">
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="__STATIC__/node_modules/hdjs/dist/hdjs.css">
+    <link href="__STATIC__/lib/wangEditor.min.css">
     <script src="__STATIC__/admin/js/jquery.min.js"></script>
     <script src="__STATIC__/admin/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
     <script src="__STATIC__/layer/layer.js"></script>
@@ -44,7 +45,7 @@
     </script>
     <!--<script src="__STATIC__/node_modules/hdjs/app/util.js"></script>-->
     <!--<script src="__STATIC__/node_modules/hdjs/require.js"></script>-->
-    <!--<script src="__STATIC__/node_modules/hdjs/config.js"></script>-->
+    <script src="__STATIC__/lib/wangEditor.min.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/require.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/config.js"></script>
     <style>
@@ -298,18 +299,22 @@
                 <label for=""  class="col-sm-2 control-label">文章内容</label>
                 <div class="col-sm-9">
                     <!--<textarea id="container" name="arc_content" style="height:500px;width:100%;"></textarea>-->
-                    <div id="editormd"><textarea name="arc_content" hidden>初始内容</textarea></div>
+                    <div id="editormd"></div>
+                    <textarea hidden id="text1" name="arc_content" style="width:100%; height:200px;"></textarea>
                     <script>
-                        require(['hdjs'], function (hdjs) {
-                            hdjs.markdown("editormd", {
-                                width: '100%',
-                                heigth: 300,
-                                callback:function(editormd){
-                                    //编辑器对象
-                                    console.log(editormd);
-                                }
-                            });
-                        });
+                        var E = window.wangEditor
+                        var editor = new E('#editormd')
+
+                        var $text1 = $('#text1')
+                        // 配置服务器端地址
+                        editor.customConfig.uploadImgServer = '/upload'
+                        editor.customConfig.onchange = function (html) {
+                            // 监控变化，同步更新到 textarea
+                            $text1.val(html)
+                        }
+                        editor.create()
+                        // 初始化 textarea 的值
+                        $text1.val(editor.txt.html())
                     </script>
 
                     <!--<script>-->

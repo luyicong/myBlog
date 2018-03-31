@@ -16,7 +16,6 @@ class Webset extends Controller
     public function edit(){
         if(request()->isPost()){
            $res = (new \app\common\model\Webset())->edit(input('post.'));
-
             if($res['valid']){
                 //成功
                 $this->success($res['msg'],'index',$res['data']);exit;

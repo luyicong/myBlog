@@ -15,52 +15,40 @@
     <div class="detail_content">
         {$aticleData['arc_content']}
     </div>
-</div>
-<!--文章详情内容/end-->
-<!--<article>-->
-    <!--<div class="_head">-->
-        <!--<h1>{$aticleData['arc_title']}</h1>-->
-        <!--<span>作者：<a href="javascript:;">{$aticleData['arc_author']}</a></span>-->
-        <!--•-->
-        <!--&lt;!&ndash;pubdate表⽰示发布⽇日期&ndash;&gt;-->
-        <!--<time pubdate="pubdate" datetime="{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}">{:date('Y年m月d日 h:i:s',$aticleData['sendtime'])}</time>-->
-        <!--•-->
-        <!--<span>点击：<span style="color:#999">{$aticleData['arc_click']}</span></span>-->
+    <!--<div id="reward_btn">打开弹窗</div>-->
+    <!--<div class="reward_dialog_mask">-->
+        <!--<div class="reward_dialog_box"></div>-->
     <!--</div>-->
-    <!--<div class="_digest">-->
-        <!--{$aticleData['arc_content']}-->
-    <!--</div>-->
-    <!--&lt;!&ndash;<div class="pagination pagination-sm pull-right">&ndash;&gt;-->
-
-    <!--&lt;!&ndash;</div>&ndash;&gt;-->
-    <!--<div class="_footer">-->
-        <!--<i class="glyphicon glyphicon-tags"></i>-->
-        <!--{foreach $aticleData['tags'] as $vo}-->
-        <!--<a href="">{$vo.tag_name}</a>、-->
-        <!--{/foreach}-->
-    <!--</div>-->
-
-
-    <!--<div class="comments_wrap">-->
-        <!--<h3>评论列表：</h3>-->
-        <!--{foreach name="comments" item="vo"}-->
-        <!--{eq name="vo.pid" value="0"}<hr class="solidline"/>{else/}<hr class="dottedline"/>{/eq}-->
-        <!--<div class="commentList"  style="padding-left:{$vo.level}cm;text-align:left">-->
-            <!--<div>-->
-                <!--<span class="user">-->
-                <!--{if condition="($vo.pauthor eq NULL)"}{$vo.author}-->
-                    <!--{else /} {$vo.author}<span class="black" style="color: #000101">回复</span>{$vo.pauthor}-->
-                <!--{/if}-->
-                <!--</span>-->
-                <!--<a class="hf" id="{$vo.id}" style="float: right">回复</a>-->
-                <!--<span  class="hftime">{$vo.time|date="Y-m-d",###}</span>-->
-            <!--</div>-->
-            <!--<div class="content">{$vo.content|reFace}</div>-->
-
+    <!--打赏 start-->
+    <div class="gratuity">
+        <p>如果觉得我的文章对您有用，请随意打赏一下。您的支持将是我继续努力的动力！</p>
+        <a id="gratuity-alert-btn" class="gratuity-alert-btn" href="javascript:;">￥打赏支持￥</a>
+        <!--<div class="phone-pay">-->
+            <!--<p>-->
+                <!--<img src="../img/weixn_pay_code.jpg" alt="">-->
+                <!--<span>微信</span>-->
+            <!--</p>-->
+            <!--<p>-->
+                <!--<img src="../img/alipay_code.jpg" alt="">-->
+                <!--<span>支付宝</span>-->
+            <!--</p>-->
         <!--</div>-->
+        <!--打赏弹窗 start-->
+        <div class="gratuity-alert-mask"></div>
+        <div class="gratuity-alert-box animated">
+            <i class="close-icon close-btn"></i>
+        </div>
+        <!--打赏弹窗 end-->
+    </div>
+    <!--打赏 end-->
+</div>
+<script type="application/javascript">
 
-        <!--{/foreach}-->
-    <!--</div>-->
-
-<!--</article>-->
+    $(function(){
+        $('#reward_btn').click(function(){
+            alert('111')
+        });
+    })
+</script>
+<!--文章详情内容/end-->
 {/block}

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\www\myBlog\public/../application/index\view\index\index.html";i:1515397374;s:56:"D:\www\myBlog\public/../application/index\view\base.html";i:1522225272;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\www\myBlog\public/../application/index\view\index\index.html";i:1515397374;s:56:"D:\www\myBlog\public/../application/index\view\base.html";i:1524735908;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -12,8 +12,8 @@
     <meta name="renderer" content="ie-stand">
     <link rel="stylesheet" href="__STATIC__/new_index/css/reset.css">
     <link rel="stylesheet" href="__STATIC__/new_index/css/style.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
     <script src="__STATIC__/new_index/js/jquery-3.2.1.min.js"></script>
-    <script src="__STATIC__/new_index/js/markdown.js"></script>
 </head>
 <body>
 <!--顶部banner/start-->
@@ -128,6 +128,17 @@
         <!--中间文章列表/end-->
         <!--右侧边栏/start-->
         <div id="sidebar_right" class="sidebar sidebar_right">
+            <div class="sidebar_item about_wrap">
+                <div class="sidebar_title">关于yoho167博客</div>
+                <div class="about_content">
+                    <p>yoho167博客，是LYC123个人技术博客，主要记录和总结前端工作中常用的知识及我的生活。</p>
+                    <div class="conact_icon">
+                        <div class="icon_item"></div>
+                        <div class="icon_item"></div>
+                        <div class="icon_item"></div>
+                    </div>
+                </div>
+            </div>
             <!--<div class="sidebar_item account_wrap">-->
                 <!--<a class="avatar" href="#"><img src="./public/img/avatar.png" /></a>-->
                 <!--<p class="btns">-->
@@ -147,7 +158,7 @@
                 <!--</div>-->
             <!--</div>-->
             <!--所有分类/start-->
-            <div class="sidebar_item cate_list_wrap" style="margin-top: 0">
+            <div class="sidebar_item cate_list_wrap">
                 <div class="sidebar_title">
                     分类列表
                 </div>
@@ -201,110 +212,5 @@
 </div>
 <!--返回顶部/end-->
 </body>
-<script type="text/javascript">
-    var c = document.getElementById("c");
-    var ctx = c.getContext("2d");
-
-    //making the canvas full screen
-    c.height = 180;
-    c.width = window.innerWidth;
-
-    //chinese characters - taken from the unicode charset
-    var chinese = "JavascriptHtml5Css3Node";
-    //converting the string into an array of single characters
-    chinese = chinese.split("");
-
-    var font_size = 12;
-    var columns = c.width / font_size; //number of columns for the rain
-    //an array of drops - one per column
-    var drops = [];
-    //x below is the x coordinate
-    //1 = y co-ordinate of the drop(same for every drop initially)
-    for (var x = 0; x < columns; x++)
-        drops[x] = 1;
-
-    //drawing the characters
-    function draw() {
-        //Black BG for the canvas
-        //translucent BG to show trail
-        ctx.fillStyle = "rgba(74,120,218,0.06)";
-        ctx.fillRect(0, 0, c.width, c.height);
-
-        ctx.fillStyle = "#fff"; //green text
-        ctx.font = font_size + "px arial";
-        //looping over drops
-        for (var i = 0; i < drops.length; i++) {
-            //a random chinese character to print
-            var text = chinese[Math.floor(Math.random() * chinese.length)];
-            //x = i*font_size, y = value of drops[i]*font_size
-            ctx.fillText(text, i * font_size, drops[i] * font_size);
-
-            //sending the drop back to the top randomly after it has crossed the screen
-            //adding a randomness to the reset to make the drops scattered on the Y axis
-            if (drops[i] * font_size > c.height && Math.random() > 0.975)
-                drops[i] = 0;
-
-            //incrementing Y coordinate
-            drops[i]++;
-        }
-    }
-    setInterval(draw, 50);
-
-    $(function(){
-        var oSiderLeft = $('.sidebar_left');
-        var iScrollTop = $('html,body').scrollTop();
-        setScrollPos(iScrollTop)
-        $(document).scroll(function(){
-            iScrollTop = $('html,body').scrollTop()
-            setScrollPos(iScrollTop)
-        })
-        function setScrollPos(iTop){
-            if(iTop>=250){
-                oSiderLeft.css({position:'fixed'})
-            }else{
-                oSiderLeft.css({position:'absolute'})
-            }
-        }
-
-        //
-        var oCateName = $('#list_content .cate_name');
-        oCateName.hover(function() {
-            $(this).find('>font').fadeIn(200)
-        },function() {
-            $(this).find('>font').fadeOut(100)
-        })
-
-        var oBackTop = $('#back_top_btn');
-        var oBackTopActive = $('#back_top_btn_active');
-        var isS = true
-        oBackTop.click(function(){
-            isS = false
-            oBackTop.fadeOut(100)
-            $('body,html').animate({scrollTop:0},400,function(){
-                isS = true
-            })
-        })
-
-        var $ScrollTop = $(window).scrollTop();
-        var $iScrollTop = $(window).height()/2;
-        if ($ScrollTop > $iScrollTop) {
-            oBackTop.fadeIn(300);
-        }else{
-            oBackTop.fadeOut(300);
-        }
-        $(window).scroll(function(){
-            if(!isS) return
-            $ScrollTop = $(window).scrollTop();
-            if ($ScrollTop > $iScrollTop) {
-                oBackTop.fadeIn(300);
-            }else{
-                oBackTop.fadeOut(300);
-            }
-        });
-
-        // $('#search_btn').on('click',function(){
-        //     window.location.href = "/search.html?kw="+$("kw").val()
-        // })
-    })
-</script>
+<script type="text/javascript" src="__STATIC__/new_index/js/common.js"></script>
 </html>

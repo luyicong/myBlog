@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\www\myBlog\public/../application/admin\view\entry\index.html";i:1497935018;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1523759737;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:63:"D:\www\myBlog\public/../application/admin\view\entry\index.html";i:1497935018;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1523767934;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +6,6 @@
     <title>TP5个人博客后台管理系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="__STATIC__/admin/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>-->
-    <script src="https://cdn.bootcss.com/tinymce/4.7.11/jquery.tinymce.min.js"></script>
     <link href="__STATIC__/admin/css/site.css" rel="stylesheet">
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="__STATIC__/node_modules/hdjs/dist/hdjs.css">
@@ -47,13 +45,15 @@
     </script>
     <!--<script src="__STATIC__/node_modules/hdjs/app/util.js"></script>-->
     <!--<script src="__STATIC__/node_modules/hdjs/require.js"></script>-->
-    <script src="__STATIC__/lib/wangEditor.min.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/require.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/config.js"></script>
-    <script src="__STATIC__/lib/tinymce.min.js"></script>
+    <!--<script src="__STATIC__/lib/tinymce.min.js"></script>-->
     <style>
         i {
             color: #337ab7;
+        }
+        #ue_container{
+            min-height: 400px;
         }
     </style>
 </head>

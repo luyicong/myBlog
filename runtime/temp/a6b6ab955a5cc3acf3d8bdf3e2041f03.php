@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\www\myBlog\public/../application/admin\view\article\store.html";i:1523766526;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1523766547;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:65:"D:\www\myBlog\public/../application/admin\view\article\store.html";i:1523766526;s:56:"D:\www\myBlog\public/../application/admin\view\base.html";i:1525685024;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +6,6 @@
     <title>TP5个人博客后台管理系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="__STATIC__/admin/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>-->
-    <!--<script src="https://cdn.bootcss.com/tinymce/4.7.11/jquery.tinymce.min.js"></script>-->
     <link href="__STATIC__/admin/css/site.css" rel="stylesheet">
     <link href="__STATIC__/admin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="__STATIC__/node_modules/hdjs/dist/hdjs.css">
@@ -33,9 +30,9 @@
         //组件目录必须绝对路径(在网站根目录时不用设置)
         window.hdjs.base = '__STATIC__/node_modules/hdjs';
         //上传文件后台地址
-        window.hdjs.uploader = "<?php echo url('system/component/uploader'); ?>";
+        window.hdjs.uploader = 'test/php/uploader.php?';
         //获取文件列表的后台地址
-        window.hdjs.filesLists = "<?php echo url('system/component/filesLists'); ?>?";
+        window.hdjs.filesLists = 'test/php/filesLists.php?';
 
         $(function(){
             $('.dropdown-toggle').click(function(){
@@ -48,7 +45,6 @@
     </script>
     <!--<script src="__STATIC__/node_modules/hdjs/app/util.js"></script>-->
     <!--<script src="__STATIC__/node_modules/hdjs/require.js"></script>-->
-    <script src="__STATIC__/lib/wangEditor.min.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/require.js"></script>
     <script src="__STATIC__/node_modules/hdjs/dist/static/requirejs/config.js"></script>
     <!--<script src="__STATIC__/lib/tinymce.min.js"></script>-->
@@ -447,7 +443,7 @@
     <!--<a href="http://www.hdphp.com">开源框架</a>-->
     <!--<a href="http://bbs.houdunwang.com">后盾论坛</a>-->
     <br>
-    Powered by LYC © 2017-2022 www.congitlive.cn
+    Powered by LYC © 2017-2022 blog.yoho167.cn
 </div>
 </body>
 </html>
